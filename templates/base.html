@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Reportes GDYP</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 180px;
+            background-color: #2c3e50;
+            height: 100vh;
+            color: white;
+            padding-top: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .sidebar.hidden {
+            transform: translateX(-220px);
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #34495e;
+        }
+
+        .content {
+            margin-left: 10px;
+            padding: 20px;
+            flex-grow: 1;
+            transition: margin-left 0.3s ease;
+            width: 100%;
+        }
+
+        .content.expanded {
+            margin-left: 0;
+        }
+
+        .toggle-btn {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .form-container {
+            max-width: 600px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container input,
+        .form-container textarea,
+        .form-container select {
+            width: 100%;
+            padding: 8px 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-container button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #2980b9;
+        }
+        .dropdown-checkbox {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-checkbox.open .dropdown-content {
+    display: block;
+}
+    </style>
+</head>
+<body>
+
+<!-- Toggle Button -->
+<button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+    <h2>GDYP</h2>
+    <a href="{% url 'lista_proyectos' %}">📋 Proyectos</a>
+    <a href="{% url 'lista_estatus' %}">📆 Estatus Semanales</a>
+    <a href="{% url 'crear_estatus' %}">➕ Agregar Estatus</a>
+    <a href="{% url 'lista_flujo_caja' %}">💰 Flujo de Caja</a>
+
+</div>
+
+<!-- Main Content -->
+<div id="content" class="content">
+    {% block content %}
+    {% endblock %}
+</div>
+
+<script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById("sidebar");
+        const content = document.getElementById("content");
+        sidebar.classList.toggle("hidden");
+        content.classList.toggle("expanded");
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const dropdown = document.querySelector('.dropdown-checkbox');
+        const button = dropdown.querySelector('.dropdown-btn');
+
+        button.addEventListener('click', function () {
+            dropdown.classList.toggle('open');
+        });
+
+        // Opcional: cerrar al hacer clic fuera
+        document.addEventListener('click', function (e) {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('open');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1802 @@
+[
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1756,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "224-PT-061",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería detalles, compras y construcción poder de compras de minerales en el sector de las Breas Taltal",
+    "servicio": "CONTRATO 4600001301: Ingeniería de Detalles, Permisos Sectoriales y Gestión de Información para adquisición de equipos asociados al poder de compras de minerales en el sector Las Breas Tal Tal",
+    "autor": "Andres Reyes",
+    "fecha": "2025-07-10",
+    "comentario": "Servicio presenta desviaciones por sobre el -36,58%. Contratista presento preliminar de Mitigación con Cronograma a termino de Septiembre. Por parte de Enami se indico que plazos deben ser ajustados con coherencia a los (10) nuevos entregables del servicio. Se preve fecha autorizada de finalización para finales de Agosto 2025."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1757,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "422-PD-048",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Proyecto Ingeniería Detalle y Construcción 1° Peraltamiento Depósito de Relaves, Planta Delta",
+    "servicio": "CONTRATO 4500024789: Obras de Construcción y Montaje para el 1° Peraltamiento del Muro Sur Poniente y Canal Contorno- Planta Delta",
+    "autor": "Andres Reyes",
+    "fecha": "2025-07-10",
+    "comentario": "Desviación del servicio presenta indicios de desviación negativa en torno al -6,58%. Alta probabilidad de desviación por sobre el -10%, producto de las Interferencias declaradas por el contratista en (10 SDI al 10-07). Todas presentan status de respondido."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1758,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-PM-081",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería de detalles y construcción depósito de relaves filtrados Planta Matta",
+    "servicio": "CONTRATO 4600001213: Servicio Ingeniería de detalles y Gestión de Suministros \"Planta y Depósito de relaves filtrados Planta Matta\"",
+    "autor": "Andres Reyes",
+    "fecha": "2025-07-10",
+    "comentario": "En revisisón termino de entregables remanentes, donde existira una nueva NOC para validar actualización en estrategia de Construcción (alternativa a 1 contrato de ejecución principal). Ajuste de Evaluaciones tecnicas previstas en el listado de entregables que seran reemplazadas por la actualización de entrategia. Prevista fecha de termino Ingenieria con estas ultimas revisiones nuevas para 2 semanas mas."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1759,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "224-PT-061",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería detalles, compras y construcción poder de compras de minerales en el sector de las Breas Taltal",
+    "servicio": "CONTRATO 4600001301: Ingeniería de Detalles, Permisos Sectoriales y Gestión de Información para adquisición de equipos asociados al poder de compras de minerales en el sector Las Breas Tal Tal",
+    "autor": "Andres Reyes",
+    "fecha": "2025-07-02",
+    "comentario": "Contratista presento en ultima reunión contractual un avance real del 17,52% vs el 43,03% planificado en su LB1 (ya reprogramado en mayo) indicando una desviación del -25,51%. Contratista reitera que falencia de avance es producto de la renuncia del Control Documental de JEJ. Servicio ya presenta No Conformidad por desviación del programa, fue declarado que si existen acciones para la mitigación de la desviación, se podra generar una nueva No Conformidad por avances. Posiblemente sea generada No Conformidad por Ausencia de profesional Control Documental en reunión contractual del 02-07."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1760,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "422-PD-048",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Proyecto Ingeniería Detalle y Construcción 1° Peraltamiento Depósito de Relaves, Planta Delta",
+    "servicio": "CONTRATO 4500024789: Obras de Construcción y Montaje para el 1° Peraltamiento del Muro Sur Poniente y Canal Contorno- Planta Delta",
+    "autor": "Andres Reyes",
+    "fecha": "2025-07-02",
+    "comentario": "Servicio presenta retrasos en el inicio de actividades planificadas. Contratista identifica una serie de SDI por posibles interferencias 1. Tuberia existente a nivel de terreno con muro Poniente y Sur 1; 2. Relleno en Muro Sur 2; 3. Problema ambiental con sector arboles nativos, 4. Diferencia entre eje de planos y terreno Muro Poniente, Sur  1 y Sur 2. Equipo de terreno Enami presenta revisión integral de las SDI declaradas por el contratista y estan en estudio de los distintos casos para la resolución agil de las interferencias. Instalación de Faenas ya en curso de retiro observaciones finales por parte de Contratista y se planifica inicio de escarpe para el termino de semana en curso."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1761,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "422-PD-048",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Proyecto Ingeniería Detalle y Construcción 1° Peraltamiento Depósito de Relaves, Planta Delta",
+    "servicio": "CONTRATO 4500023794: Construcción y montaje de los sistemas de impulsión y captación para el primer peraltamiento del deposito de relaves - Planta Delta",
+    "autor": "Andres Reyes",
+    "fecha": "2025-05-15",
+    "comentario": "Alerta: Vencimiento de plazo contractual desde el 07-05-25. En curso de generación disminución de contrato en torno a -$107.000.000 CLP Neto y Adendum de sobre plazo hasta el 30-05-2025. Actividades en ser descontadas en curso de revisión alternativas por parte Depto. Construcción / Fiscalia. Semana del 26-05 se prevee inicio de etapa final de Construcción Peraltamiento Sur - Poniente."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1762,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-PM-081",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería de detalles y construcción depósito de relaves filtrados Planta Matta",
+    "servicio": "CONTRATO 4600001213: Servicio Ingeniería de detalles y Gestión de Suministros \"Planta y Depósito de relaves filtrados Planta Matta\"",
+    "autor": "Andres Reyes",
+    "fecha": "2025-05-15",
+    "comentario": "Alerta: Vencimiento contractual de termino Ingenieria Detalles para el proximo viernes 16-05. Se prevee notificación contractual de vencimientos a contratista el proximo lunes 19-05. Apartado de servicio que finaliza con Evaluaciones Tecnicas data con fecha contractual al 16-06-2025."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1763,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "224-PT-061",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería detalles, compras y construcción poder de compras de minerales en el sector de las Breas Taltal",
+    "servicio": "CONTRATO 4600001301: Ingeniería de Detalles, Permisos Sectoriales y Gestión de Información para adquisición de equipos asociados al poder de compras de minerales en el sector Las Breas Tal Tal",
+    "autor": "Andres Reyes",
+    "fecha": "2025-05-15",
+    "comentario": "Alerta: El pasado 14-05 en Reunión contractual se oficializo desviación del servicio en torno al -13% de lo planificado, generando una proyección de retrasos en 3 semanas. Fue solicitado Plan de Mitigación e informados en reunión de posible No Conformidad y multas asociadas. Por parte de Jefe Proyecto agilizara trabajos de mitigación y generara visita a oficina contratista (JEJ)."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1764,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "321-XL-002",
+    "jefe_proyecto": "",
+    "eecc": "J.E.J.",
+    "proyecto": "Exploración geológica Distrito Agua Amarga",
+    "servicio": "Control y Mapeo 1",
+    "autor": "Daniela Campos",
+    "fecha": "2025-05-15",
+    "comentario": "Reunión equipo geología ENAMI con equipo JEJ en lunes 11 para guiar la mejora en entregables. JEJ debe presentar la actualización de los entregables para el EDP 1.\nEl programa de JEJ no tiene margen de error para cumplimiento del plazo, el cual termina el 31 de mayo de 2025."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1765,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "320-XL-001",
+    "jefe_proyecto": "",
+    "eecc": "Geoexploraciones",
+    "proyecto": "Exploración geológica Distrito Pastenes",
+    "servicio": "Geofísica",
+    "autor": "Daniela Campos",
+    "fecha": "2025-05-15",
+    "comentario": "En desarrollo, comenzó el 28-04-2025. El servicio tiene una duración de 150 días, por lo que debería completarse para el 25 de septiembre del presente año. Contratista Geoexploraciones."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1766,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "321-XL-002",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración geológica Distrito Agua Amarga",
+    "servicio": "Geofísica Etapa 2 (Licitación)",
+    "autor": "Daniela Campos",
+    "fecha": "2025-05-15",
+    "comentario": "En proceso de asignación de analista para licitación, Solped 10021017. Para comenzar proceso de Licitación."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1767,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-PS-063",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Reposición de estanque de ácido planta el salado",
+    "servicio": "LICITACIÓN GENERADA: Etapa de Ingenieria y ejecución",
+    "autor": "Andres Reyes",
+    "fecha": "2025-05-15",
+    "comentario": "Antecedentes tecnicos en proceso de replanteo y optimización para posible adjudicación de oferente mas economico. Inicialmente todos los oferentes superaron valor de Solped."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1768,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "424-PD-053",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Construcción cúpula cono fino planta súlfuros.",
+    "servicio": "LICITACIÓN NO GENERADA: Etapa de Construcción",
+    "autor": "Andres Reyes",
+    "fecha": "2025-05-15",
+    "comentario": "Alerta: Presupuesto operacional aproximados 170-192 mil dolares. Indicado en Capex de Ingenieria Detalle es cercano a 800 mil dolares. No existe api para tal presupuesto. Se presentara caso de proyecto ante Cochilco para aprobación y ejecución."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1769,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "425-XL-005",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración geológica prospecto panulcillo",
+    "servicio": "Sondajes Etapa 2",
+    "autor": "Daniela Campos",
+    "fecha": "2025-05-15",
+    "comentario": "Se encuentra pendiente definir la modalidad de los servicios de perforaciones. Se espera que esto sea definido durante la próxima semana. Uno de los factores en la decisión es el estado de avances en que se encuentre tramitado el contato marco de perforaciones.\nALERTA: La demora en el contrato de marco de perforaciones está retrasando la planificación para la segunda etapa de perforaciones (3642 mts) y por consiguente del resto de los servicios relacionados en Sondajes Panulcillo, (Tercera etapa de perforaciones 3910 mts, y para la supervisión y mapeo, laboratorio y modelamiento y estimación para las etapas 2 y 3 de perforaciones). La segunda etapa de perforaciones se retrasaría hasta ahora a mediados de septiembre."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1770,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-XL-003",
+    "jefe_proyecto": "",
+    "eecc": "DV Drilling",
+    "proyecto": "Exploración y valorización propiedad minera Cerro Negro y alrededores",
+    "servicio": "Perforaciones 8.200 metros",
+    "autor": "Daniela Campos",
+    "fecha": "2025-05-15",
+    "comentario": "Esta semana llegan 2 máquinas nuevas, una en reemplazo de la máquina 2 (sonda Cortech) y la otra corresponde a la tercer máquina. Perforación Total Acumulada: 2.053,1 metros. Máquina 1 (Sonda Maxidrill): 1.377,4 metros; Máquina 2 (Sonda Cortech): 675.7 metros, máquina 3 (Sonda CoreRig) debería comenzar a perforar entre hoy y mañana.\nConsiderando las 3 máquinas y un promedio de perforación diario de 77,6 metros/días, sería factible completar los 8.200 metros de perforaciones en la semana 18 del lunes 28 de julio de 2025. Es importante considerar que dado esto, no se tendría espacio a margen de error, que permita disminuir ese promedio diario de perforaciones."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1771,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "322-PS-052",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Obras de regularización del crecimiento de botaderos de ripios 1 y 2",
+    "servicio": "SOLPED 10018881: FASE N°2: Construcción medidas de mitigación de ruido chancador y obras complementarias de atravieso de camino",
+    "autor": "Andres Reyes",
+    "fecha": "2025-05-15",
+    "comentario": "Alerta: Hito Constructivo del 100% ejecución actividades Medidas Mitigación en vencimiento al 14-05. En curso de notificación en la presente semana. Retrasos Impactarian  termino de servicio en 1 semana adicional al plazo contractual."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1772,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "GDP-2025-6",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería Detalle y Construcción 2° Peraltamiento Depósito de Relaves",
+    "servicio": "Ingeniería Detalle y Construcción 2° Peraltamiento Depósito de Relaves",
+    "autor": "Jaime Tagle",
+    "fecha": "2025-05-16",
+    "comentario": "Próxima semana 19 al  24, entregar evalución económica e informe del proyecto"
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1773,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "GDP-2025-10",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería Factibilidad, Mejora Cancha de Recepción Distrito Delta.",
+    "servicio": "Ingeniería Factibilidad, Mejora Cancha de Recepción Distrito Delta.",
+    "autor": "Jaime Tagle",
+    "fecha": "2025-05-16",
+    "comentario": "Se entregó evaluación económica  e informe  del proyecto."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1774,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "422-PD-048",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Proyecto Ingeniería Detalle y Construcción 2° Peraltamiento Depósito de Relaves, Planta Delta",
+    "servicio": "CONTRATO 4500023794: Construcción y montaje de los sistemas de impulsión y captación para el primer peraltamiento del deposito de relaves - Planta Delta",
+    "autor": "Andres Reyes",
+    "fecha": "2025-05-22",
+    "comentario": "Alerta: Vencimiento de plazo contractual desde el 07-05-25. En curso de generación disminución de contrato en torno a -$107.000.000 CLP Neto y Adendum de sobre plazo hasta el 30-05-2025. Contratista en curso de termino actividades remanantes con desviación acumulada. Avances constructivos al 24-05 podran si contratista pueda finalizar actividades remanantes al 30-05."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1775,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "324-PM-081",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería de detalles y construcción depósito de relaves filtrados Planta Matta",
+    "servicio": "CONTRATO 4600001213: Servicio Ingeniería de detalles y Gestión de Suministros \"Planta y Depósito de relaves filtrados Planta Matta\"",
+    "autor": "Andres Reyes",
+    "fecha": "2025-05-22",
+    "comentario": "Alerta: Vencimiento contractual de termino Ingenieria Detalles para el proximo viernes 16-05. Notificados en reunión contractual del 22-05. Fue exigido desgloce de plan para termino de Ingenieria Detalles, como previsión de nuestra parte podemos inferir un atraso de 3 semanas. Apartado de servicio que finaliza con Evaluaciones Tecnicas data con fecha contractual al 16-06-2025."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1776,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "224-PT-061",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería detalles, compras y construcción poder de compras de minerales en el sector de las Breas Taltal",
+    "servicio": "CONTRATO 4600001301: Ingeniería de Detalles, Permisos Sectoriales y Gestión de Información para adquisición de equipos asociados al poder de compras de minerales en el sector Las Breas Tal Tal",
+    "autor": "Andres Reyes",
+    "fecha": "2025-05-22",
+    "comentario": "Alerta:  Reunión contractual actualizo desviación al -19,37% de lo planificado LB0, con un avance real de 2,38%. Plan de Mitigación entregada la semana pasada,  fue observado y pasara en una nueva revisión, para su consolidación como LB1. Se deja constancia que servicio posiblemente requiera adición de plazos en torno a 1 mes.  Retraso parcial por parte de Contratista en consolidación y envio apartados Topograficos y en menor medida por la busqueda de antecedentes de ingenieria preliminar (entre ellos Hidraulica)."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1777,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "422-PD-048",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Proyecto Ingeniería Detalle y Construcción 2° Peraltamiento Depósito de Relaves, Planta Delta",
+    "servicio": "CONTRATO EN CURSO: Construcción Peraltamiento Sur y Poniente.",
+    "autor": "Andres Reyes",
+    "fecha": "2025-05-22",
+    "comentario": "Empresa adjudicada entrego hoy PM Boleta Garantia Faltante (Seguros). Inicio de obras tentativamente el 26-05, se apertura rango a semana final de mayo inicio de obras con respectiva KOM, en dependencia de tiempos firma contrato."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1778,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "320-XL-001",
+    "jefe_proyecto": "",
+    "eecc": "Geoexploraciones",
+    "proyecto": "Exploración geológica Distrito Pastenes",
+    "servicio": "Geofísica",
+    "autor": "Daniela Campos",
+    "fecha": "2025-05-22",
+    "comentario": "Para este servicio se estimó una duración de 150 días, (termino proyectado para finales de septiembre), sin embargo, de acuerdo al programa del contratista este servicio se completaría a finales de julio, (2 meses antes), por lo que corresponderían menos reuniones e informes bisemanales que los planificados originalmete y consideradas en bases. Se está evaluando como abordar el tema de mejor manera, el monto total del contrato no tendría cambios."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1779,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "321-XL-002",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración geológica Distrito Agua Amarga",
+    "servicio": "Geofísica Etapa 2 (Licitación)",
+    "autor": "Daniela Campos",
+    "fecha": "2025-05-22",
+    "comentario": "Hoy se asigna analista Pedro Vega para Solped 10021017. Se comenzará seguimiento de la licitación."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1780,
+  "fields": {
+    "prioridad": 2,
+    "codigo_proyecto": "324-PS-063",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Reposición de estanque de ácido planta el salado",
+    "servicio": "LICITACIÓN GENERADA: Etapa de Ingenieria y ejecución",
+    "autor": "Andres Reyes",
+    "fecha": "2025-05-22",
+    "comentario": "Antecedentes tecnicos en proceso de replanteo y optimización para posible adjudicación de oferente mas economico. Inicialmente todos los oferentes superaron valor de Solped. Status Mantenido."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1781,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-PS-064",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería de detalle y construcción galpón testigoteca, estanterías y equipamiento operativo - El Salado",
+    "servicio": "LICITACIÓN GENERADA: Sobrecostos en Empresas postulantes, necesito una revisión de Ingenieria para optimización de requerimientos constructivos para una disminución de costos.",
+    "autor": "Andres Reyes",
+    "fecha": "2025-05-22",
+    "comentario": "En generación Bases Tecnicas optimizadas para nuevamente Licitar."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1782,
+  "fields": {
+    "prioridad": 2,
+    "codigo_proyecto": "424-PD-053",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Construcción cúpula cono fino planta súlfuros.",
+    "servicio": "LICITACIÓN NO GENERADA: Etapa de Construcción",
+    "autor": "Andres Reyes",
+    "fecha": "2025-05-22",
+    "comentario": "Alerta: Presupuesto operacional aproximados 170-192 mil dolares. Indicado en Capex de Ingenieria Detalle es cercano a 800 mil dolares. No existe api para tal presupuesto. Se presentara caso de proyecto ante Cochilco para aprobación y ejecución. Status mantenido."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1783,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "324-XL-003",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración y valorización propiedad minera Cerro Negro y alrededores",
+    "servicio": "Modelamiento y Estimación",
+    "autor": "Daniela Campos",
+    "fecha": "2025-05-22",
+    "comentario": "La próxima semana, (del 26 de mayo), se trabajará en el Requerimiento Técnico para modelamiento.\nLa primera semana de junio se trabajará en las bases de licitación de estimación."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1784,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "425-XL-005",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración geológica prospecto panulcillo",
+    "servicio": "Sondajes Etapa 2",
+    "autor": "Daniela Campos",
+    "fecha": "2025-05-22",
+    "comentario": "Se encuentra pendiente aún la licitación de contato marco de perforaciones, tiene de analista a Luis Muñoz. Dado esto, las perforaciones etapa 2 de 3.642 metros se retrasarían al menos para comenzar a finales de septiembre, en la planificación original se consideraba comenzar el servicio a finales de julio."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1785,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "324-XL-003",
+    "jefe_proyecto": "",
+    "eecc": "DV Drilling",
+    "proyecto": "Exploración y valorización propiedad minera Cerro Negro y alrededores",
+    "servicio": "Perforaciones 8.200 metros",
+    "autor": "Daniela Campos",
+    "fecha": "2025-05-22",
+    "comentario": "Se tienen en total 2.372,5 metros perforados hasta el día de ayer 21 de mayo.\nMáquina 1: 1.652,7 metros totales perforados.\nMáquina 2: 242,1 metros totales perforados. No ha operado en 6 días por temas de barras atrapadas y trabajo en recuperación.\nMáquina 3: 23,1 metros totales perforados. Empezó a operar martes 20 de mayo."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1786,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "322-PS-052",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Obras de regularización del crecimiento de botaderos de ripios 1 y 2",
+    "servicio": "SOLPED 10016675: FASE N°1: Construcción canal de contorno 2 y defensa fluvial",
+    "autor": "Andres Reyes",
+    "fecha": "2025-05-22",
+    "comentario": "En curso de gestión Aumento de Contrato para Construcción Canal de Contorno 1. con contratista Eleccon (Canal Contorno 2, Defensa Fluvial actualmente ejecutando). Fecha prevista de inicio Agosto 2025 con una duración de 3 meses."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1787,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "322-PS-052",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Obras de regularización del crecimiento de botaderos de ripios 1 y 2",
+    "servicio": "SOLPED 10018881: FASE N°2: Construcción medidas de mitigación de ruido chancador y obras complementarias de atravieso de camino",
+    "autor": "Andres Reyes",
+    "fecha": "2025-05-22",
+    "comentario": "Alerta: Hito Constructivo del 100% ejecución actividades Medidas Mitigación en vencimiento desde 14-05.  Notificado Contratista. Retrasos Impactarian  termino de servicio en 1 semana adicional al plazo contractual se mantiene status."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1788,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "GDP-2025-8",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ing. Detalle Construcción Botadero de Ripios 3 Planta El Salado",
+    "servicio": "Ing. Detalle Construcción Botadero de Ripios 3 Planta El Salado",
+    "autor": "Jaime Tagle",
+    "fecha": "2025-05-23",
+    "comentario": "Próxima semana 19 al  24, desarrollar evalución económica e informe del proyecto"
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1789,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "422-PD-048",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Proyecto Ingeniería Detalle y Construcción 2° Peraltamiento Depósito de Relaves, Planta Delta",
+    "servicio": "CONTRATO 4500023794: Construcción y montaje de los sistemas de impulsión y captación para el primer peraltamiento del deposito de relaves - Planta Delta",
+    "autor": "Andres Reyes",
+    "fecha": "2025-05-29",
+    "comentario": "Alerta: Vencimiento de plazo contractual desde el 07-05-25. Servicio con actividades disminuidas ad portas de finalización al 30-05-25. Se contemplo una disminución de actividades y un segundo aumento de plazo hasta el 30-05. Holgura de proyecto integral en dependencia de etapa constructiva final."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1790,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "224-PT-061",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería detalles, compras y construcción poder de compras de minerales en el sector de las Breas Taltal",
+    "servicio": "CONTRATO 4600001301: Ingeniería de Detalles, Permisos Sectoriales y Gestión de Información para adquisición de equipos asociados al poder de compras de minerales en el sector Las Breas Tal Tal",
+    "autor": "Andres Reyes",
+    "fecha": "2025-05-29",
+    "comentario": "Alerta:  En reunión pasada del 28-05 se detecto diferencias en curva S LB1 presentada por contratista en primera semana de reprogramación, desviación real contempla un -7,5% ya con reprogramación, lo cual genera una alta probabilidad de desviación de plazos contractuales en torno a 2 semanas y en posible aumento en las proximas semanas en ser confirmado."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1791,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "422-PD-048",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Proyecto Ingeniería Detalle y Construcción 2° Peraltamiento Depósito de Relaves, Planta Delta",
+    "servicio": "CONTRATO EN CURSO: Construcción Peraltamiento Sur y Poniente.",
+    "autor": "Andres Reyes",
+    "fecha": "2025-05-29",
+    "comentario": "Servicio con fecha de inicio 26-05, en curso de validación firmas de contrato. Por confirmar KOM, retraso de inicio en (1 semana)."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1792,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "321-XL-002",
+    "jefe_proyecto": "",
+    "eecc": "J.E.J.",
+    "proyecto": "Exploración geológica Distrito Agua Amarga",
+    "servicio": "Control y Mapeo 1",
+    "autor": "Daniela Campos",
+    "fecha": "2025-05-29",
+    "comentario": "-JEJ tiene un cumplimiento de menos del 50% de los entregables realizados aprobados al 29 de mayo de 2025 y el contrato termina en 31 de mayo de 2025.\n -Hoy se tendrá una reunión con Sergio Parada de JEJ, donde nos propondrá posibles medidas de mitigación dado el contexto.\n -Hoy se envia carta de notificación a JEJ con detalle de los pendiente.\n -Se está evaluando el tema de las multas que deben ser ejecutadas."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1793,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "425-XL-005",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración geológica prospecto panulcillo",
+    "servicio": "Sondajes Etapa 2",
+    "autor": "Daniela Campos",
+    "fecha": "2025-05-29",
+    "comentario": "Se encuentra pendiente la licitación de contato marco de perforaciones, (analista a Luis Muñoz). Dado esto las perforaciones etapa 2 se atrasarían más de dos meses, arrastrando los demás servicios asociados a esta y las perforaciones etapa 3. Esto podría implicar que aproximadamente 500.000 USD NETO proyectados a 2025 pudiesen pasar a 2026."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1794,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-XL-003",
+    "jefe_proyecto": "",
+    "eecc": "DV Drilling",
+    "proyecto": "Exploración y valorización propiedad minera Cerro Negro y alrededores",
+    "servicio": "Perforaciones 8.200 metros",
+    "autor": "Daniela Campos",
+    "fecha": "2025-05-29",
+    "comentario": "-Estimación: En caso de que se cuente con una máquina 2 en funcionamiento para el jueves 5 de junio, para el 31 de julio se proyectan 7.564 metros perforados, 653 metros menos de los 8.200 metros planificados.\n -Estado actual: Se tienen en total 2.899,6 metros perforados hasta el día de ayer 28 de mayo.\nMáquina 1: 1.967,8 metros totales perforados (promedio 29 m/día)\nMáquina 2: 696,7 metros totales perforados. No ha operado en 13 días por temas de barras atrapadas y trabajo en recuperación. (dejando fuera estos 13 días el promedio es de 16,5 m/día).\nMáquina 3: 235,1 metros totales perforados. Empezó a operar martes 20 de mayo. (promedio 29 m/día)"
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1795,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "322-PS-052",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Obras de regularización del crecimiento de botaderos de ripios 1 y 2",
+    "servicio": "SOLPED 10018881: FASE N°2: Construcción medidas de mitigación de ruido chancador y obras complementarias de atravieso de camino",
+    "autor": "Andres Reyes",
+    "fecha": "2025-05-29",
+    "comentario": "Alerta: Hito Constructivo del 100% ejecución actividades Medidas Mitigación en vencimiento desde 14-05. Por Acta de terreno, finalizo hito retrasado hoy 29-05. Solicitud de contratista por Adenda de aumento de plazos en +3 dias que es lo calculado que necesitaran como minimo para el termino del servicio. Aprobación en curso de JP para proximos pasos."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1796,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "422-PD-048",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería de detalles y construcción ampliación depósito de relaves Planta Delta etapa I",
+    "servicio": "CONTRATO 4500023794: Construcción y montaje de los sistemas de impulsión y captación para el primer peraltamiento del deposito de relaves - Planta Delta",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-04",
+    "comentario": "Hito: Acta de recepción provisoria generado por contratista el pasado viernes 30-05-2025, dando termino a la ejecución de Servicio. Actualmente en proceso de cierre administrativo, Carpeta TOP. Existente EDP Remanente."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1797,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "224-PT-061",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería detalles, compras y construcción poder de compras de minerales en el sector de las Breas Taltal",
+    "servicio": "CONTRATO 4600001301: Ingeniería de Detalles, Permisos Sectoriales y Gestión de Información para adquisición de equipos asociados al poder de compras de minerales en el sector Las Breas Tal Tal",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-04",
+    "comentario": "Alerta: Servicio con LB1 - Reprogramación #1, presenta desviaciones sostenadias, actualmente en -2,67% de desviación. Proyecto presenta alta posibilidad de requerir plazo adicional para el termino de ejecución. (Original 5 meses para Ing. Detalles). Por parte de Enami, puede existir 2 semanas justificadas de sobreplazo por busqueda de antecedentes."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1798,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "422-PD-048",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería de detalles y construcción ampliación depósito de relaves Planta Delta etapa I",
+    "servicio": "CONTRATO EN CURSO: Construcción Peraltamiento Sur y Poniente.",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-04",
+    "comentario": "Hito: KOM de servicio en curso de generación el 04-06-2025. Plazo servicio 150 Dias. Contratista Serviterra. Tiempos de trabajo ratifican que por planificación el Servicio de Construcción finalizaria a termino de 2025."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1799,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "321-XL-002",
+    "jefe_proyecto": "",
+    "eecc": "J.E.J.",
+    "proyecto": "Exploración geológica Distrito Agua Amarga",
+    "servicio": "Control y Mapeo 1",
+    "autor": "Daniela Campos",
+    "fecha": "2025-06-04",
+    "comentario": "-El servicio terminó el 31 de mayo de 2025, tan solo dos días antes del término del servicio la empresa había entregado tan solo el 50% de los entregables. El último día JEJ entregó los entregables restantes salvo 1.\n -Considerando los atrasos, rotación de personal, la calidad deficiente de las versiones previas de los entregables, entre otros factores, se espera que parte de estos entregables no cumplan con la calidad requerida. Se evaluará cómo serán abordados los temas que queden inconlusos y se espera ejecutar multas sobre el trabajo de JEJ.\n -Del total de 27 entregables, 1 no fue entregado, 4 están en revisión, 17 (63%) están aprobados, 5 (19%) están aprobados con comentarios."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1800,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "321-XL-002",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración geológica Distrito Agua Amarga",
+    "servicio": "Geofísica Etapa 2 (Licitación)",
+    "autor": "Daniela Campos",
+    "fecha": "2025-06-04",
+    "comentario": "Aun se encuentra pendiente que se inicie licitación. Solped 10021017. Esto está retrasando el inicio del servicio de agosto a octubre de 2025. El retraso se debe en parte a lentitud en el proceso de asignación de analista, y al parecer poca disponibilidad temporal de los mismos, lo cual está representando un cuello de botella en diversos temas. Ya fue asignado el analista Pedro Vega quien nos hizo observaciones el viernes pasado y estas ya fueron corregidas."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1801,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "424-PD-053",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Construcción cúpula cono fino planta súlfuros.",
+    "servicio": "Licitación Construcción",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-04",
+    "comentario": "Alerta: Servicio remanente de Construcción Cúpula Cono Finos, requerira Reformulación por costos y plazo. Respecto a Capex gestionado por Contratista en etapa Ingenieria Detalles, indicaron que proyecto de construcción, presenta valores superiores al Identificado / formulado inicialmente."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1802,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "322-PS-052",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Obras de regularización del crecimiento de botaderos de ripios 1 y 2",
+    "servicio": "LICITACIÓN SOLPED 10019574: \"Licitación FASE 1: Readecuación e impermeabilización piscina y obras de cañería, obras restantes – Paquete A\"",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-04",
+    "comentario": "Observación: Servicio en proceso de cierre adjudicatorio y firmas con Empresa Montajes Verticales. Se alerta que adjudicación (Capex $MM 0,33) vs Licitación adjudicada $MM 0,46. Diferencia negativa de -$MM 0,13. Plazo de adjudicación supero los 3 meses considerados en Cronograma LB."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1803,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "322-PS-052",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Obras de regularización del crecimiento de botaderos de ripios 1 y 2",
+    "servicio": "LICITACIÓN SOLPED pendiente: \"Canal de Contorno N°1\" Adjudicado a Eleccon",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-04",
+    "comentario": "Observación: Servicio en proceso de cierre adjudicatorio y firmas aumento de contrato a Eleccon Maquinarias (Canal de Contorno 2 y Defensa Fluvial). Se alerta que adjudicación (Capex $MM 0,48) vs Licitación y adjudicación aumento contrato por $MM 0,79. Diferencia negativa de -$MM 31. Plazo de adjudicación supero los 1,5 meses considerados en Cronograma LB."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1804,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-XL-003",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración y valorización propiedad minera Cerro Negro y alrededores",
+    "servicio": "Modelamiento y Estimación",
+    "autor": "Daniela Campos",
+    "fecha": "2025-06-04",
+    "comentario": "Aún no se recibe para revisión y retroalimentación el Requerimiento Técnico para el servicio modelamiento (comprometido para la semana pasada), ni las bases de licitación del servicio de estimación (comprometidos para esta semana). Esto ya está retrasando el inicio de los servicios de agosto a octubre de 2025, pasando parte del servicio de estimación a enero de 2026.\nConsiderar que inicialmente se iba a realizar una licitación en conjunto para modelamiento y estimación, y desde equipo Cerro Negro se definió separar los servicios, realizar un requerimiento técnico para modelamiento y una licitación para estimación."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1805,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "425-XL-005",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración geológica prospecto panulcillo",
+    "servicio": "Sondajes Etapa 2",
+    "autor": "Daniela Campos",
+    "fecha": "2025-06-04",
+    "comentario": "Se reitera la alerta de que se encuentra pendiente la licitación de contato marco de perforaciones, (analista a Luis Muñoz). Dado esto las perforaciones etapa 2 se atrasarían más de dos meses, arrastrando los demás servicios asociados a esta y las perforaciones etapa 3. Esto podría implicar que aproximadamente 500.000 USD NETO proyectados a 2025 pudiesen pasar a 2026."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1806,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-XL-003",
+    "jefe_proyecto": "",
+    "eecc": "DV Drilling",
+    "proyecto": "Exploración y valorización propiedad minera Cerro Negro y alrededores",
+    "servicio": "Perforaciones 8.200 metros",
+    "autor": "Daniela Campos",
+    "fecha": "2025-06-04",
+    "comentario": "Se tienen en total 3.158,6 metros perforados hasta el día martes 3 de junio.\nMáquina 1: 2.012,8 metros totales perforados (promedio 30,5 m/día)\nMáquina 2: 849,6 metros totales perforados. Volvió a operar el 30 de mayo, luego de 13 días en que no estuvo operativo por temas de barras atrapadas y trabajo en recuperación. ( dejando fuera estos 13 días el promedio es de 18 m/día).\nMáquina 3: 296,2 metros totales perforados. Empezó a operar martes 20 de mayo. (promedio 24,4 m/día) \nPara el 31 de julio se proyectan 7.602 metros perforados, 598 metros menos de los 8.200 metros planificados."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1807,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "322-PS-052",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Obras de regularización del crecimiento de botaderos de ripios 1 y 2",
+    "servicio": "Servicios remanentes de Proyecto.",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-04",
+    "comentario": "Alerta: Proyecto requerira Reformulación por Costo y Plazo. Se estima por Jefe Proyecto y actualización de servicios remanentes y estrategia de ejecución, un aumento de presupuesto en torno a $MM 2.23. Se calcula ademas necesarios un aumento de plazo de +5 / 6 Meses. En suma con los antecedentes de servicios anteriores licitados, indican un sobrecosto tanto de Servicios en curso / finalizados, licitaciones generadas y futuros servicios por sub estimación Capex.  Primavera de PMO actualizado con nuevos antecedentes proyectando el posible sobrecosto y plazo adicional, respecto al nuevo ordenamiento de Servicios remanentes del Proyecto."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1808,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "322-PS-052",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Obras de regularización del crecimiento de botaderos de ripios 1 y 2",
+    "servicio": "SOLPED 10016675: FASE N°1: Construcción canal de contorno 2 y defensa fluvial",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-04",
+    "comentario": "Observación: Servicio en curso. Se alerta que adjudicación (Capex: $MM 1.30) vs Licitación adjudicada $MM 1.92. Diferencia negativa de -$MM 0,62, impactando en presupuesto final de Proyecto. Plazo de adjudicación supero los 1,5 meses considerados en Cronograma LB."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1809,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "322-PS-052",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Obras de regularización del crecimiento de botaderos de ripios 1 y 2",
+    "servicio": "SOLPED 10018616: FASE N°1: Construcción pozos de monitoreo + SOLPED 10019334: Servicio de arriendo Bulldozer (MMTT pozos de monitoreo) planta Salado",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-04",
+    "comentario": "Observación: Servicio finalizado. Se alerta que adjudicación (Capex: $MM 0,10) vs Licitación adjudicada $MM 0,89. Diferencia de ahorro de $MM 0,10. Plazo de adjudicación supero los 3 meses considerados en Cronograma LB."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1810,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "322-PS-052",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Obras de regularización del crecimiento de botaderos de ripios 1 y 2",
+    "servicio": "SOLPED 10018881: FASE N°2: Construcción medidas de mitigación de ruido chancador y obras complementarias de atravieso de camino",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-04",
+    "comentario": "Observación: Servicio en proceso de termino con requerimiento Jefe Proyecto / Contratista aumento plazo de +3 dias (Solicitud de Cambio). En curso de aprobación. Respecto a su adjudicación, se alerta que adjudicación (Capex: $MM 0,32) vs Licitación adjudicada $MM 0,41. Diferencia negativa de -$MM 0,09."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1811,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "324-PM-081",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería de detalles y construcción depósito de relaves filtrados Planta Matta",
+    "servicio": "CONTRATO 4600001213: Servicio Ingeniería de detalles y Gestión de Suministros \"Planta y Depósito de relaves filtrados Planta Matta\"",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-11",
+    "comentario": "El proyecto tiene una desviación de 6 meses, esto debido a un inicio tardío de la licitación de ingeniería de detalles. La ingeniería de detalles la está ejecutando la empresa AED y presenta un atraso de dos a tres semanas respecto de la fecha de término del contrato. El contrato termina el 16 de junio, pero faltarán entregables en revisión 0. Se debe considerar la firma de acta provisoria que fije lo pendiente con plazo definido de término."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1812,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "224-PT-061",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería detalles, compras y construcción poder de compras de minerales en el sector de las Breas Taltal",
+    "servicio": "CONTRATO 4600001301: Ingeniería de Detalles, Permisos Sectoriales y Gestión de Información para adquisición de equipos asociados al poder de compras de minerales en el sector Las Breas Tal Tal",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-11",
+    "comentario": "Proyecto con una desviación de 6 meses de atraso producto de inicio tardío de licitación. Actualmente la empresa JEJ desarrolla la ingeniería de detalles. El servicio presenta una desviación de 40% respecto del programa original. El contrato termina el 6 de agosto y se estima que terminará en septiembre. Existe atraso de entregables, se debe generar medidas de mitigación."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1813,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "322-PS-052",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Obras de regularización del crecimiento de botaderos de ripios 1 y 2",
+    "servicio": "SOLPED 10018881: FASE N°2: Construcción medidas de mitigación de ruido chancador y obras complementarias de atravieso de camino",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-11",
+    "comentario": "Hito: Acta de recepción provisoria en curso de generación el  10-06-2025, dando termino a la ejecución de Servicio. Actualmente en proceso de cierre administrativo, Carpeta TOP. Existente EDP Remanente."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1814,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "424-ED-057",
+    "jefe_proyecto": "",
+    "eecc": "Metaproject",
+    "proyecto": "Continuidad operacional largo plazo depósito de relaves filtrados",
+    "servicio": "Continuidad operacional largo plazo depósito de relaves filtrados",
+    "autor": "Kamila Tamblay",
+    "fecha": "2025-07-10",
+    "comentario": "Empresa meta Project presenta una desviación del el 27-05  -13%, se le solicita a la empresa presentar plan de mitigación,  Se le advierte a la empresa de la alta exigencia de la curva presentada las últimas 5 semanas de proyecto. Metaproject  lleva reportando desde hace 4 semanas (desde el 27 de mayo) donde se ha pasado de un 16,04% a un 18,5% es decir, se ha avanzado un 2% en todo este periodo de tiempo mencionando además que llevamos a la fecha un 85% del tiempo total del servicio. Metaproject presenta una desviación de -21,3%. Se redactan 5 no conformidades en el siguiente orden :\nNo conformidad n°1 – Demora en el envío del programa maestro \nNo conformidad n°2 – Desviación negativa sobre 10%\nNo conformidad n°3 – Falta de jefe de proyectos\nNo conformidad n°4 – Desviación negativa sobre el 10% e incumplimiento de plan de mitigación,  Incumplimiento calicatas en terreno\nNo conformidad n°5 – Desviación negativa sobre 20%"
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1815,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "424-PD-053",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Construcción cúpula cono fino planta súlfuros.",
+    "servicio": "Licitación Construcción",
+    "autor": "Carlos Bruit",
+    "fecha": "2025-06-12",
+    "comentario": "El proyecto debe ser reformulado por monto y por plazo, esto debido a que la ingeniería de detalles determinó un monto muy superior al monto recomendado. El proyecto tiene fecha de inicio en septiembre 2024, su plazo es de 7 meses y la fecha de término programada es en abril 2025. Se requiere ingresar la formulación a más tardar el viernes 11 de julio para que pase a revisión de la Unidad de Control de Inversiones. Si pasa de esta fecha y o se logra ingresar antes del fin de julio, el proyecto pasara para el 2026. En el caso que esta sea la decisión se debe informar para bajar el proyecto del portafolio 2025 y disponer del presupuesto."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1816,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-XL-003",
+    "jefe_proyecto": "",
+    "eecc": "DV Drilling",
+    "proyecto": "Exploración y valorización propiedad minera Cerro Negro y alrededores",
+    "servicio": "Perforaciones 8.200 metros",
+    "autor": "Daniela Campos",
+    "fecha": "2025-06-12",
+    "comentario": "Se tienen en total 3.323,7 metros perforados hasta el día lunes 9 de junio. Para el 30 de julio se proyectan 6.331 metros perforados, 1.869 metros menos de los 8.200 metros planificados.\nNo es factible cumplir la meta de los 8.200 metros ya que se necesitaría un promedio de perforación de 100 metros/diario, y actualmente se tiene un promedio de 60,85 metros/día considerando las 3 máquinas. Dado esto el equipo de Mauricio priorizará los lugares de perforación de  mayor interés para el proyecto, y se evaluará considerar las ubicaciones restantes para una etapa de perforación futura.\n\n*Detalle por máquina:\nMáquina 1: 2.012,8 metros totales perforados, igual que la semana pasada, ha estado sin operar por 9 días. Esto por rescate de herramiento, atrapamiento de barras, y posterior a decidir no continuar con el rescate, la sonda tuvo problemas con el cabezal de rotación. (promedio era de 27,2 m/día)\nMáquina 2: 905,15 metros totales perforados. (promedio es de 13,51 m/día).\nMáquina 3: 405,75 metros totales perforados. Empezó a operar martes 20 de mayo. (promedio 20,13 m/día)."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1817,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "321-XL-002",
+    "jefe_proyecto": "",
+    "eecc": "J.E.J.",
+    "proyecto": "Exploración geológica Distrito Agua Amarga",
+    "servicio": "Control y Mapeo 1",
+    "autor": "Daniela Campos",
+    "fecha": "2025-06-12",
+    "comentario": "-El servicio terminó el 31 de mayo de 2025, tan solo dos días antes del término del servicio la empresa había entregado tan solo el 50% de los entregables. El último día JEJ entregó los entregables restantes salvo 1.\n-El equipo de geología ya terminó la revisión de todos los entregables; Del total de 27 entregables, 1 (4%) no fue entregado, 18 (67%) están aprobados, 7 (26%) están aprobados con comentarios y 1 (4%) fue rechazado, el cual corresponde al Informe Final.\n-Hoy se realizará una reunión con el equipo de geología para evaluar cómo proceder con los pagos, y otros, considerando el desempeño del servicio."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1818,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "321-XL-002",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración geológica Distrito Agua Amarga",
+    "servicio": "Geofísica Etapa 2 (Licitación)",
+    "autor": "Daniela Campos",
+    "fecha": "2025-06-12",
+    "comentario": "Se encuentra pendiente que se inicie licitación. Solped 10021017. El analista Pedro Vega ya solicitó el visado de las bases el pasado viernes 6 de junio. Esto está retrasando el inicio del servicio de agosto a octubre de 2025."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1819,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-XL-003",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración y valorización propiedad minera Cerro Negro y alrededores",
+    "servicio": "Modelamiento y Estimación",
+    "autor": "Daniela Campos",
+    "fecha": "2025-06-12",
+    "comentario": "Recibimos el Requerimiento Técnico para modelamiento ayer miércoles 11 de junio, éste será revisado durante el día de hoy, para elevar la solicitud a más tardar este viernes en caso de no haber comentarios relevantes.\nMauricio se comprometió a enviar las bases de licitación de estimación durante la próxima semana del 16 de junio."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1820,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "425-XL-005",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración geológica prospecto panulcillo",
+    "servicio": "Sondajes Etapa 2",
+    "autor": "Daniela Campos",
+    "fecha": "2025-06-12",
+    "comentario": "-Aún no tenemos Decreto de Identificación para Panulcillo.\n -Se reitera la alerta de que se encuentra pendiente la licitación de contato marco de perforaciones, (analista a Luis Muñoz). Hasta ahora esto está retrasando el inicio de las perforaciones etapa 2 en dos meses impactando también a los demás servicios que se asocian a perforaciones. Esto puede implicar que aproximadamente 730.000 USD NETO proyectados a pagar en 2025 pudiesen pasar a 2026, (lo que se asocia principalmente a los pagos del servicio de Sondajes 3642 mts (etapa 2))."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1821,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-PS-063",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Reposición de Estanque de Ácido Planta El Salado",
+    "servicio": "Reposición Estanque de ácido",
+    "autor": "Carlos Bruit",
+    "fecha": "2025-06-12",
+    "comentario": "En correo del 10-06-2025 el MDSF-COCHILCO solicita la siguiente información adicional para la refomulación: Situación mayo 025, causas de reformulación, comparación de precio y cantidades entre el presupuesto del API original y el reformulado, plan de ejecución del API reformulado. Se requiere fijar fecha de respuesta."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1822,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "322-EL-156",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Estudio de exploración básica salares ENAMI",
+    "servicio": "ASESORÍA EN TECNOLOGÍAS DE EXTRACCIÓN DE LITIO",
+    "autor": "Macarena Cortés",
+    "fecha": "2025-07-17",
+    "comentario": "El servicio finalizó el 09-07-25, sin embargo, ayer se envío a empresa colaboradora un acta de recepción provisoria. Existen 4 documentos finalizando la revisión en ENAMI y 3 documentos aprobados con comentarios que serán corregidos a la brevedad. Una vez aprobados estos documentos se elaborará acta de recepción definitiva."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1823,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "325-EL-161",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Estudio de exploración básica complementaria Salares Altoandinos",
+    "servicio": "CONTRATOS DE EXPLORACIÓN",
+    "autor": "Macarena Cortés",
+    "fecha": "2025-07-17",
+    "comentario": "Se extendieron todos los contratos de exploración hasta septiembre. Sin embargo, existe una baja respuesta de la cadena de abastecimiento.\nEl día 07-07-25 se envío a Luis Mezones un correo solicitando el estatus de las modificaciones de contratos y de los documentos que pendientes de firma para respaldar. Aún no hay respuesta.\nExisten procesos abiertos desde hace un par de semanas/meses y no han se han enviado las adendas."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1824,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-PV-066",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería de detalles y construcción depósito de ripios Planta Vallenar etapa I",
+    "servicio": "INGENIERÍA DE DETALLES, PERMISOS SECTORIALES Y GESTIÓN DE INFORMACIÓN PARA COMPRA DEPÓSITO DE RIPIOS PLANTA VALLENAR - ETAPA 1",
+    "autor": "Macarena Cortés",
+    "fecha": "2025-07-17",
+    "comentario": "El viernes 16 de mayo finalizó el servicio de ingeniería de detalles. Sin embargo, quedaron documentos pendientes de aprobación. Por esta razón, el mismo día se envió al jefe de proyecto el acta de recepción provisoria.\nEl plazo máximo para emitir el acta de recepción definitiva es el 30 de agosto, fecha en que vence la boleta de garantía. Esta extensión no afecta el inicio de la construcción, ya que el depósito cuenta con una vida útil prolongada.\nActa de Recepción provisoria fue enviada a la empresa colaboradora el 03-06-25.\nEl avance físico al 09-07-25 es de 95,63%, quedan 3 documentos pendientes de liberación. Se ha insistido por correo la emisión y aporbación de estos."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1825,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "322-EL-156",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Estudio de exploración básica salares ENAMI",
+    "servicio": "INGENIERÍA DE PERFIL",
+    "autor": "Macarena Cortés",
+    "fecha": "2025-07-17",
+    "comentario": "Se está evaluando extender el servicio hasta el 15-09-25, debido a revisión de los capítulos y emisión final del compilado."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1826,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "324-PM-081",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería de detalles y construcción depósito de relaves filtrados Planta Matta",
+    "servicio": "CONTRATO 4600001213: Servicio Ingeniería de detalles y Gestión de Suministros \"Planta y Depósito de relaves filtrados Planta Matta\"",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-18",
+    "comentario": "Proyecto presenta desviación de 5,6 meses al termino de septiembre 2026, producto del inicio desfazado de Ingenieria Detalles y termino de servicio retrasado. En curso mitigación de cierre servicios en coordinación Acta de recepción provisoria, generación de posibles multas en entregables que sobrepasen el plazo adicional. Respecto a la mitigación del Proyecto, estan en curso diversas licitaciones activadas entre ellas compra de equipamientos para ser cursado en 2025."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1827,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-PM-081",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería de detalles y construcción depósito de relaves filtrados Planta Matta",
+    "servicio": "CONTRATO 4500025122: \"Elaboración y Gestión de Permisos del Proyecto Planta y Depósito de Relaves Filtrados Planta Matta\"",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-18",
+    "comentario": "Servicio presenta retrasos en su desarrollo. En curso de generación ampliación de plazos en 2 meses por la revisión de antecedentes por Contratista especializado y la optimización de permisos que en efecto deben ser presentados a las entidades fiscalizadoras y cuales no."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1828,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "322-PS-052",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Obras de regularización del crecimiento de botaderos de ripios 1 y 2",
+    "servicio": "Servicios remanentes de Proyecto.",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-18",
+    "comentario": "Serie de servicios abarcados en el Proyecto, seran acelerados para inicio en segundo semestre 2025, generando el proximo inicio de 4 actividades nuevas de las planificadas en Mayo 2025 (Paquete A  N°1. Reingenieria evaluación de diseños readecuación botaderos e impermeabilización; Paquete A N°2. Fase 2.1: Trabajos preparativos de readecuación botadero de ripios 2 (arriendo de bulldozer, excavadora y camión tolva).; Paquete A  N°3. Ampliación de contrato para trabajos primarios de impermeabilización en sectores readecuación; Paquete A  N°1. Readecuación botaderos de ripios 1 y 2, obras restantes - Paquete A - Planta El Salado. Estas gestiones requeriran optimización en procesos y coordinaciones, tanto de revisiones y validaciones de licitación para cumplir con los objetivos de Presupuesto 2025."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1829,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "224-PT-061",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería detalles, compras y construcción poder de compras de minerales en el sector de las Breas Taltal",
+    "servicio": "CONTRATO 4600001301: Ingeniería de Detalles, Permisos Sectoriales y Gestión de Información para adquisición de equipos asociados al poder de compras de minerales en el sector Las Breas Tal Tal",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-18",
+    "comentario": "Servicio de Ingenieria de Detalle presenta desviaciones sobre el 10% por segunda vez. Posible retraso de Ingenieria en +1 mes. Por parte de contratista aun no reflejan mejoras de tiempos en la generación de entregables. Jefe Proyecto Enami presenta apoyos de gestión con reuniones especificas de especialidades para acelerar revisiones."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1830,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "422-PD-048",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería de detalles y construcción ampliación depósito de relaves Planta Delta etapa I",
+    "servicio": "CONTRATO EN CURSO: Construcción Peraltamiento Sur y Poniente.",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-18",
+    "comentario": "Servicio de Peraltamiento Sur - Poniente, presenta retraso de actividades iniciales, Contratista indica que parte del retraso fue por validación rechazada en primera instancia de maquinarias declaradas en adjudicación. Fue revisado por Enami y proceso quedo aprobado, retrasos iniciales deberan ser absorvidos en Planificación rev.C (LB0)."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1831,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "321-XL-002",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración geológica Distrito Agua Amarga",
+    "servicio": "Perforación de Sondajes Etapa 2",
+    "autor": "Daniela Campos",
+    "fecha": "2025-06-19",
+    "comentario": "- Es crítico contar lo antes posible con el contrato marco de sondajes. Yerko Gonzalez está evaluando actualemnte el calendario y el proceso de publicación de licitación debería empezar  el próximo lunes 23 de junio, (actualizo información: ya se cuenta con calendario de licitación, donde la publicación y solicitud de bases tiene fecha entre el 18 y 29 de junio, recepción de ofertas el 17 de julio y apertura del archivo C para el 23 de julio). \n Hasta ahora esto estaría atrasando el plan original en 2 meses, (de septiembre a noviembre 2025), generando que parte importante de este servicio de perforación pase a 2026, y además de esto, retrasando también todos los servicios que se relacionan con la perforación. Esto puede implicar que parte significativa del monto proyectado para gastar en 2025 pase a 2026. Solo por concepto de este servicio de perforaciones aproximadamente 403.000 USD NETO proyectados a pagar en 2025 pasarían a 2026."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1832,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "321-XL-002",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración geológica Distrito Agua Amarga",
+    "servicio": "Apoyo al Mapeo y Control de Sondajes - Etapa 2",
+    "autor": "Daniela Campos",
+    "fecha": "2025-06-19",
+    "comentario": "Se encuentra en evaluación definir si este servicio se realizará a través de licitación o se desarrollará de manera interna. Este servicio debe iniciar en conjunto con el servicio de perforaciones, por lo que en caso de definirse que se realizará a través de licitación, ésta debe empezar lo antes posible o al menos cuando ya empiece la licitación de contrato marco de perforaciones."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1833,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "321-XL-002",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración geológica Distrito Agua Amarga",
+    "servicio": "Geofísica Etapa 2 (Licitación)",
+    "autor": "Daniela Campos",
+    "fecha": "2025-06-19",
+    "comentario": "La licitación 10021017 tiene calendario, con publicación ayer miércoles 18 de junio y  fecha para completarse, (Contrato firmado por ambas partes), para el 5 de septiembre. Por lo que se estima que el servicio iniciaría en septiembre teniendo un retrado de un mes respecto a planificación original. El analista es Pedro Vega."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1834,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "425-XL-005",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración geológica prospecto panulcillo",
+    "servicio": "Sondajes Etapa 2",
+    "autor": "Daniela Campos",
+    "fecha": "2025-06-19",
+    "comentario": "-Aún se encuentra pendiente el Decreto de Identificación para Panulcillo. \n - Es crítico el tema de los sondajes, en el caso de Panulcillo no está definido cómo se realizará, al parecer quedará fuera del contrato marco de pérforaciones y se encontraría abierta la opción de otros medios como el servicio de Minera Cruz. \n  Hasta ahora este servicio tendría un atraso de 4 meses respecto a la planificación original, (de julio a noviembre de 2025), generando que parte importante de los servicios de perforación pase a 2026, y además de esto, retrasando también todos los servicios que se relacionan a la perforación. Esto puede implicar que parte significativa del monto proyectado para gastar en 2025 pase a 2026. Solo por concepto de este servicio de perforaciones aproximadamente 731.227 USD NETO proyectados a pagar en 2025 pasarían a 2026."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1835,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "425-XL-005",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración geológica prospecto panulcillo",
+    "servicio": "Apoyo al Mapeo y Control de Sondajes 2",
+    "autor": "Daniela Campos",
+    "fecha": "2025-06-19",
+    "comentario": "Este servicio debe iniciar en conjunto con el servicio de perforaciones, por lo que es necesario que se avance en definirlo lo antes posible. Entiendo que se realizará a través de un requirimiento técnico y este se revisaría durante la próxima semana.\nComo comentario aparte considerar que también se encuentra planificada una etapa 3 de perforaciones y por ende también de Apoyo al Mapeo y Control de Sondajes."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1836,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-XL-003",
+    "jefe_proyecto": "",
+    "eecc": "DV Drilling",
+    "proyecto": "Exploración y valorización propiedad minera Cerro Negro y alrededores",
+    "servicio": "Perforaciones 8.200 metros",
+    "autor": "Daniela Campos",
+    "fecha": "2025-06-19",
+    "comentario": "Hasta el día miércoles 18 de junio se tienen en total 3.629,25 metros perforados, con la adhesión de una cuarta máquina este lunes 16 de junio.\nEn caso de mantenerse los promedios de productividad actuales, y las 4 máquinas, para el 30 de julio se proyectan 6.596 metros perforados, 1.604 metros menos de los 8.200 metros planificados. No es factible cumplir la meta de los 8.200 metros ya que se necesitaría un promedio de perforación de 111 metros/diario, y actualmente se tiene un promedio de 70 metros/día considerando las 4 máquinas. \n Dada la irregularidad en los trabajos, el equipo de Mauricio espera llegar a al menos a un total de 5.500 metros perforados, y se espera realizar una segunda etapa de perforaciones dentro de 2025 para abarcar lo que quede pendiente. Dado esto, desde la semana pasada están priorizando los lugares de perforación de mayor interés para el proyecto."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1837,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "324-PM-086",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería de Detalle y Construcción de nuevo layout de línea de impulsión agua fresca Planta Matta",
+    "servicio": "Ingeniería de Detalle  nuevo layout de línea de impulsión agua fresca Planta Matta",
+    "autor": "Kamila Tamblay",
+    "fecha": "2025-07-02",
+    "comentario": "Proyecto identificado desde el 10 de Febrero y programado para iniciar en el mismo mes, pero recién se inicia la licitación en Junio (visita a terreno 02/07). Los motivos del retraso son debido a que se precisaba informacion preliminar respecto del servicio de vialidad del mismo proyecto, lo que no estaba contemplado inicialmente en la formulación del mismo. El servicio quedará con un desfase proyectado del inicio de 7 meses respecto de lo programado en sistema de control de inversiones. (inicio proyectado para septiembre 2025, Inversión recomendada total proyecto : $2,688,000)"
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1838,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "424-ED-058",
+    "jefe_proyecto": "",
+    "eecc": "AED Ingenieros",
+    "proyecto": "Estudio de aumento de capacidad de procesamiento y recuperacion de especies de interés.",
+    "servicio": "Estudio de aumento de capacidad de procesamiento de mineral ex Planta Delta",
+    "autor": "Kamila Tamblay",
+    "fecha": "2025-06-25",
+    "comentario": "Proyecto retrasado por atraso en envío de carta de adjudicación a empresa AED y además, con una demora de más de 62 días desde el envío de esta, al 17-06 se realiza kick off meeting para iniciar el servicio"
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1839,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "323-PU-009",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Instrumentación en pozos de aguas subterráneas por cambio del código de aguas y transmisión en línea",
+    "servicio": "ingeniería de detalles instrumentación en pozos de aguas subterráneas por cambio del código de aguas",
+    "autor": "Macarena Cortés",
+    "fecha": "2025-07-17",
+    "comentario": "KOM se realizó el 02-06-25.\nEl 18-06-25 se aprobó una modificación de contratos mediante aconex debido a un ajuste en listado de entregables. Se eliminan actividades y se incorporan documentos. No se altera monto del contrato original ni plazo. Se está comenzando a tramitar.\nEl 07-07-25 se aprobó programa. Además, se congeló línea base."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1840,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "324-EM-082",
+    "jefe_proyecto": "",
+    "eecc": "FDA",
+    "proyecto": "Ing. básica reemplazo Tank Farm",
+    "servicio": "Ing. básica reemplazo Tank Farm",
+    "autor": "Kamila Tamblay",
+    "fecha": "2025-06-25",
+    "comentario": "El fin del contrato fue el 15/05/25. se levanta la alerta a jefe de proyectos y empresa contratista que hay 10 documentos sin revisar a esa fecha. El 30-06  se firma acta de recepcion provisoria, Aún no hay acta de recepción definitiva firmada (van 6 semanas del fin contractual)."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1841,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "324-ES-062",
+    "jefe_proyecto": "",
+    "eecc": "ddq",
+    "proyecto": "ing. básica regularización aducción de agua planta salado",
+    "servicio": "ing. básica regularización aducción de agua planta salado",
+    "autor": "Kamila Tamblay",
+    "fecha": "2025-07-10",
+    "comentario": "Proyecto inicia 07-01-25 y tiene fin contractual el 07-05-25 . Se solicita extensión de plazo, la cual fue aprobada por 45 días corridos llegando a un fin contractual del 21-06-25. A la semana actual la Empresa DDQ aún mantiene documentos sin ingresar en Aconex, incumpliendo los plazos establecidos de entrega. Se calculan multas del 2% del total del contrato por día llegando a los $70.896.431 en 12 días"
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1842,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-PS-064",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería de detalle y construcción galpón testigoteca, estanterías y equipamiento operativo - El Salado",
+    "servicio": "Licitación Contrato N° 10020609",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-26",
+    "comentario": "Semana de 16 - 20 Junio se genero cierre de Apertura Tecnica y Apertura Economica. 1 empresa clasifico para apertura economica la que se encuentra en analisis financiero. Preliminarmente se detecta montos ofertados superiores a Solped. En estudio de posibilidad aumentar Solped para adjudicación posible."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1843,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-PS-063",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Reposición de Estanque de Ácido Planta El Salado",
+    "servicio": "Reposición Estanque de ácido",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-26",
+    "comentario": "Respecto a ronda de consultas generada por MDSF-COCHILCO el 10-06-2025, Reformulación de Servicio presento las respuestas ante las consultas de Colchilco el pasado 16-06-2025."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1844,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-PM-081",
+    "jefe_proyecto": "",
+    "eecc": "AED Ingenieros",
+    "proyecto": "Ingeniería de detalles y construcción depósito de relaves filtrados Planta Matta",
+    "servicio": "CONTRATO 4500025122: \"Elaboración y Gestión de Permisos del Proyecto Planta y Depósito de Relaves Filtrados Planta Matta\"",
+    "autor": "Andres Reyes",
+    "fecha": "2025-07-02",
+    "comentario": "Contratista presento Solicitud de ampliación de plazos con modificación de Listado Entregables. Fue revisado y respondido por Jefe Proyecto (ENAMI-CH-RTCR-000039 ). Se replanifica servicio con permisos requeridos para las aprobaciones proximas, en curso de gestión aumento de plazos por 2 meses. En proceso de emisión Nota de Cambio hacia Analista de Contrato Pedro Tapia (ENAMI-CH-NOC-000011)."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1845,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-PM-081",
+    "jefe_proyecto": "",
+    "eecc": "AED Ingenieros",
+    "proyecto": "Ingeniería de detalles y construcción depósito de relaves filtrados Planta Matta",
+    "servicio": "CONTRATO 4500025122: \"Elaboración y Gestión de Permisos del Proyecto Planta y Depósito de Relaves Filtrados Planta Matta\"",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-26",
+    "comentario": "Servicio presento Solicitud de ampliación de plazos con documentación al caso. Se replanifica servicio con permisos requeridos para las aprobaciones proximas, en curso de gestión aumento de plazos por 2 meses."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1846,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "321-XL-002",
+    "jefe_proyecto": "",
+    "eecc": "J.E.J.",
+    "proyecto": "Exploración geológica Distrito Agua Amarga",
+    "servicio": "Control y Mapeo 1",
+    "autor": "Daniela Campos",
+    "fecha": "2025-06-25",
+    "comentario": "-El día de ayer se tuvo la reunión con el analista Luis Muñoz para esclarecer las consultas respecto a las multas y también el cobro de la boleta de garantía. Solicitaremos una reunión con JEJ para plantearles las multas, y luego les enviaremos la carta de notificación."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1847,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "321-XL-002",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración geológica Distrito Agua Amarga",
+    "servicio": "Geología y Geoquímica Etapa 3",
+    "autor": "Daniela Campos",
+    "fecha": "2025-06-25",
+    "comentario": "- Las Bases Técnicas de Geología y Geoquímica Etapa 3, están siendo elaboradas, se espera que sean revisadas dentro de la próxima semana.\nEste servicio estaba contemplado para comenzar en agosto y actualmente se estaría atrasando para comenzar en noviembre, esto genera que una semana del servicio y el cierre administrativo pase a 2026, y por tanto, que 62.969,4 USD NETO del total de 109.512 USD NETO proyectados a utilizar en 2025 pasen a 2026."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1848,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "425-XL-005",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración geológica prospecto panulcillo",
+    "servicio": "Sondajes Etapa 2",
+    "autor": "Daniela Campos",
+    "fecha": "2025-06-25",
+    "comentario": "Se reitera la alerta de la semana anterior.\n -Aún se encuentra pendiente el Decreto de Identificación para Panulcillo.\n -Es crítico el tema de los sondajes, en el caso de Panulcillo no está definido cómo se realizará, al parecer quedará fuera del contrato marco de pérforaciones y se encontraría abierta la opción de otros medios como el servicio de Minera Cruz.\n  Hasta ahora este servicio tendría un atraso de 4 meses respecto a la planificación original, (de julio a noviembre de 2025), generando que parte importante de los servicios de perforación pase a 2026, y además de esto, retrasando también todos los servicios que se relacionan a la perforación. Esto puede implicar que parte significativa del monto proyectado para gastar en 2025 pase a 2026. Solo por concepto de este servicio de perforaciones aproximadamente 731.227 USD NETO proyectados a pagar en 2025 pasarían a 2026."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1849,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "425-XL-005",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración geológica prospecto panulcillo",
+    "servicio": "Apoyo al Mapeo y Control de Sondajes 2",
+    "autor": "Daniela Campos",
+    "fecha": "2025-06-25",
+    "comentario": "Se reitera la aterta de la semana anterior.\nEste servicio debe iniciar en conjunto con el servicio de perforaciones, por lo que es necesario que se avance en definirlo lo antes posible. Entiendo que se realizará a través de un requirimiento técnico y este se revisaría durante la próxima semana.\nComo comentario aparte considerar que también se encuentra planificada una etapa 3 de perforaciones y por ende también de Apoyo al Mapeo y Control de Sondajes."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1850,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-XL-003",
+    "jefe_proyecto": "",
+    "eecc": "DV Drilling",
+    "proyecto": "Exploración y valorización propiedad minera Cerro Negro y alrededores",
+    "servicio": "Perforaciones 8.200 metros",
+    "autor": "Daniela Campos",
+    "fecha": "2025-06-25",
+    "comentario": "Hasta el día miércoles 25 de junio se tienen en total 4.294,35 metros perforados, (665, 1 metros más que los 3.629,25 metros que se tenian perforados hasta el miércoles de la semana pasada). Se considera la adhesión de una cuarta máquina este lunes 16 de junio.\nEn caso de mantenerse los promedios de productividad actuales, y las 4 máquinas, para el 30 de julio se proyectan 7.412 metros perforados, 788 metros menos de los 8.200 metros planificados. No es factible cumplir la meta de los 8.200 metros ya que se necesitaría un promedio de perforación de 115 metros/diario, y actualmente se tiene un promedio de 83,89 metros/día considerando las 4 máquinas.\n\nDada la irregularidad en los trabajos, el equipo de Mauricio espera llegar a al menos a un total de 5.500 metros perforados, y se espera realizar una segunda etapa de perforaciones dentro de 2025 para abarcar lo que quede pendiente. Dado esto, desde la semana pasada están priorizando los lugares de perforación de mayor interés para el proyecto."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1851,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "224-PT-061",
+    "jefe_proyecto": "",
+    "eecc": "JEJ",
+    "proyecto": "Ingeniería detalles, compras y construcción poder de compras de minerales en el sector de las Breas Taltal",
+    "servicio": "CONTRATO 4600001301: Ingeniería de Detalles, Permisos Sectoriales y Gestión de Información para adquisición de equipos asociados al poder de compras de minerales en el sector Las Breas Tal Tal",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-26",
+    "comentario": "Servicio de Ingenieria de Detalle presenta desviaciones sobre el 10% (Avance fisico del 13,03% vs el planificado LB0 67,84% y LB1 28,87%.  Jefe Proyecto Enami y Jefe Ingenieria generaran reclamo mancomunado de los servicios activos, por el caso de las desviaciones de proyectos de Contratista JEJ. Por otro lado, proyecto se confirma en semana en curso, aumento de entregables lo que condicionara un posible cambio de alcance."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1852,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "422-PD-048",
+    "jefe_proyecto": "",
+    "eecc": "Serviterra",
+    "proyecto": "Ingeniería de detalles y construcción ampliación depósito de relaves Planta Delta etapa I",
+    "servicio": "CONTRATO EN CURSO: Construcción Peraltamiento Sur y Poniente.",
+    "autor": "Andres Reyes",
+    "fecha": "2025-06-26",
+    "comentario": "Servicio de Peraltamiento Sur - Poniente, presenta retraso de actividades iniciales (IIFF), Contratista presenta inconvenientes en el termino y entrega de las Instalaciones de Faenas. En curso de cierre 27-06."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1853,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "S/ID-36",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingenieria Prefactibilidad, Alternativa a Poder de Compra Los Robles (Rancagua)",
+    "servicio": "Evaluación Económica",
+    "autor": "Jaime Tagle",
+    "fecha": "2025-06-26",
+    "comentario": "Informe y evaluación económica entregado con los cambios solicitados por MDSF-C"
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1854,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "S/ID-60",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingenieria Factibilidad linea N° 1 chancado",
+    "servicio": "Evaluación Económica",
+    "autor": "Jaime Tagle",
+    "fecha": "2025-06-26",
+    "comentario": "Evaluación económica, con los cambios solicitados por MDSF-C está pendiente, hasta que jefe de proyecto entregue información faltante"
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1855,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "S/ID-26",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ing. Detalle Construccion Botadero de Ripios 3 Planta El Salado",
+    "servicio": "Evaluación Económica",
+    "autor": "Jaime Tagle",
+    "fecha": "2025-06-26",
+    "comentario": "Evaluación económica pendiente, hasta que jefe de proyecto entregue información faltante"
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1856,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "321-XL-002",
+    "jefe_proyecto": "",
+    "eecc": "J.E.J.",
+    "proyecto": "Exploración geológica Distrito Agua Amarga",
+    "servicio": "Control y Mapeo 1",
+    "autor": "Daniela Campos",
+    "fecha": "2025-07-03",
+    "comentario": "Hoy se cierra la revisión interna de multas a realizar y se solicitará una reunión a J.E.J. para plantearlas y posterior a esto enviar la carta lo antes posible. Se plantearán multas por un total de 58.342.630,44 CLP NETO. Considerando multas, entregables realizados y su calidad, se espera generar un solo EDP por un total de 171.225.060 CLP NETO, del total de los 300.000.000 CLP NETO del contrato, dejando un delta de 128.774.940 CLP NETO que podrían ser utilizados para completar los trabajos."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1857,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "321-XL-002",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración geológica Distrito Agua Amarga",
+    "servicio": "Apoyo al Mapeo y Control de Sondajes - Etapa 2",
+    "autor": "Daniela Campos",
+    "fecha": "2025-07-03",
+    "comentario": "Este servicio se quiere realizar a través de Contrato Marco de Servicios Geológicos. Considerando que el servicio comenzaría aproximadamente desde mediados de octubre, este coincidiría con el fin del contrato marco de servicios geológicos actual, por lo que se requiere generar uno nuevo.\nEn en caso de que la licitación de este tipo de contratos tenga un tiempo de demora similar a otro tipo de licitaciones, si el actual contrato marco de servicios geológicos actual dura hasta octubre completo, sería urgente realizar la solped para el nuevo esta semana. En caso de que éste dure hasta noviembre completo, habrían 3 semanas de holgura aún."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1858,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "425-XL-005",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración geológica prospecto panulcillo",
+    "servicio": "Sondajes Etapa 2",
+    "autor": "Daniela Campos",
+    "fecha": "2025-07-03",
+    "comentario": "Se reiteran las siguientes alertas:\n -Aún se encuentra pendiente el Decreto de Identificación para Panulcillo.\n -Es crítico el tema de los sondajes, en el caso de Panulcillo no está definido cómo se realizará, al parecer quedará fuera del contrato marco de pérforaciones y se encontraría abierta la opción de otros medios como el servicio de Minera Cruz.\nEl retraso actual en el inicio de este servicio, (de agosto a octubre), está generando que 705.872 USD NETO proyectados a pagar en 2025 pasen a 2026, esto sin considerar los demás servicios que también se ven afectados por este retraso."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1859,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-XL-003",
+    "jefe_proyecto": "",
+    "eecc": "DV Drilling",
+    "proyecto": "Exploración y valorización propiedad minera Cerro Negro y alrededores",
+    "servicio": "Perforaciones 8.200 metros",
+    "autor": "Daniela Campos",
+    "fecha": "2025-07-03",
+    "comentario": "Hasta el día miércoles 2 de julio se tienen en total 4.475,15 metros perforados, tan solo 180,8 metros más que los 4.294,35 metros de la semana anterior del miércoles 25 de junio, lo cual representa una importante baja respecto a la semana previa a en la cual se perforaron 665, 1 metros más que los 3.629,25 metros del miércoles 18 de junio. Los principales factores en la baja de productividad de esta semana son problemas en las máquinas y que no ha estado operando la máquina 2, Sonda Cortech-1.\nEn caso de mantenerse los promedios de productividad actuales, y las 4 máquinas, para el 30 de julio se proyectan 6.544 metros perforados, 1.656 metros menos de los 8.200 metros planificados. Sin la máquina 2, se proyectan solo 5.302 metros para el 30 de julio, 2.898 metros menos que los planificados \nNo es factible cumplir la meta de los 8.200 metros ya que se necesitaría un promedio de perforación de 142 metros/diario, y actualmente se tiene un promedio de 74,3 metros/día considerando las 4 máquinas y 60.7 metros/día considerando 3 máquinas. \n\nDada la irregularidad en los trabajos, el equipo de Mauricio espera llegar a un total de 5.500 metros perforados, y realizar una segunda etapa de perforaciones dentro de 2025 para abarcar lo que quede pendiente."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1860,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-ES-065",
+    "jefe_proyecto": "",
+    "eecc": "J.E.J.",
+    "proyecto": "Estudio de diagnóstico nave SX y EW Planta El Salado",
+    "servicio": "Estudio de diagnóstico nave SX y EW Planta El Salado",
+    "autor": "Kamila Tamblay",
+    "fecha": "2025-07-10",
+    "comentario": "La empresa JEJ presenta una desviación por debajo de la curva de un -24% incluso con el plan de mitigación solicitado. Se redacta no conformidad por incumplimiento y desviación"
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1861,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "325-PG-030",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Implementación de sistema de monitoreo y gestión energética",
+    "servicio": "Implementación de sistema de monitoreo y gestión energética",
+    "autor": "Kamila Tamblay",
+    "fecha": "2025-07-10",
+    "comentario": "El proyecto “Implementación de sistema de monitoreo y gestión energética” Fue recomendado en marzo, la licitación está en proceso de finalizar prontamente y no ha llegado la identificación que estaba programada para el mes de Junio"
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1862,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "GDP-2025-6",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ingeniería Detalle y Construcción 2° Peraltamiento Depósito de Relave",
+    "servicio": "Ingeniería Detalle y Construcción 2° Peraltamiento Depósito de Relave",
+    "autor": "Kamila Tamblay",
+    "fecha": "2025-07-01",
+    "comentario": "Proyecto se debe formular con urgencia para cumplir con el inicio programado en año 2025"
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1863,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "GDP-2025-8",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ing. Detalle Construcción Botadero de Ripios 3 Planta El Salado",
+    "servicio": "Ing. Detalle Construcción Botadero de Ripios 3 Planta El Salado",
+    "autor": "Kamila Tamblay",
+    "fecha": "2025-07-01",
+    "comentario": "Se debe ingresar formulario a MDSF - C con urgencia para cumplir con el inicio comprometido en el año 2025"
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1864,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "GDP-2025-11",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Estudio Implementación laboratorio fundición para análisis de Oro y Plata Planta Delta",
+    "servicio": "Estudio Implementación laboratorio fundición para análisis de Oro y Plata Planta Delta",
+    "autor": "Kamila Tamblay",
+    "fecha": "2025-07-01",
+    "comentario": "Se debe ingresar formulario a MDSF - C con urgencia para cumplir con el inicio comprometido en el año 2025"
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1865,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "GDP-2025-12",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ing. de Factibilidad, Obras Civiles Obtención Permisos Sectoriales (ETAPA- PTAS)",
+    "servicio": "Ing. de Factibilidad, Obras Civiles Obtención Permisos Sectoriales (ETAPA- PTAS)",
+    "autor": "Kamila Tamblay",
+    "fecha": "2025-07-01",
+    "comentario": "Se debe ingresar formulario a MDSF - C con urgencia para cumplir con el inicio comprometido en el año 2025"
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1866,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "GDP-2025-17",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ing. detalles y construcción scrubber para Aglomerado (Reemplazo existente) Planta Salado",
+    "servicio": "Ing. detalles y construcción scrubber para Aglomerado (Reemplazo existente) Planta Salado",
+    "autor": "Kamila Tamblay",
+    "fecha": "2025-07-01",
+    "comentario": "Se debe ingresar formulario a MDSF - C con urgencia para cumplir con el inicio comprometido en el año 2025"
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1867,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "GDP-2025-18",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Estudio conceptual de derrames soluciones ácidas y concentraducto - Sistema de alerta temprana de derrames",
+    "servicio": "Estudio conceptual de derrames soluciones ácidas y concentraducto - Sistema de alerta temprana de derrames",
+    "autor": "Kamila Tamblay",
+    "fecha": "2025-07-01",
+    "comentario": "Se debe ingresar formulario a MDSF - C con urgencia para cumplir con el inicio comprometido en el año 2025"
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1868,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "GDP-2025-23",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Ing. detalles y construccion canales de contorno",
+    "servicio": "Ing. detalles y construccion canales de contorno",
+    "autor": "Kamila Tamblay",
+    "fecha": "2025-07-01",
+    "comentario": "Se debe ingresar formulario a MDSF - C con urgencia para cumplir con el inicio comprometido en el año 2025"
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1869,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "322-PS-052",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Obras de regularización del crecimiento de botaderos de ripios 1 y 2",
+    "servicio": "SOLPED 10019574: \"Licitación FASE 1: Readecuación e impermeabilización piscina y obras de cañería, obras restantes – Paquete A\"",
+    "autor": "Andres Reyes",
+    "fecha": "2025-07-03",
+    "comentario": "Iniciada KOM de servicio el presente 03-07-2025. Acta de inicio y fecha sera prevista para el proximo lunes 07-07-2025."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1870,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "321-XL-002",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración geológica Distrito Agua Amarga",
+    "servicio": "Apoyo al Mapeo y Control de Sondajes - Etapa 2",
+    "autor": "Daniela Campos",
+    "fecha": "2025-07-10",
+    "comentario": "-Este servicio se quiere realizar a través de Contrato Marco de Servicios Geológicos. Considerando que el servicio comenzaría aproximadamente desde mediados de octubre, este coincidiría con el fin del contrato marco de servicios geológicos actual, por lo que se requiere generar uno nuevo.\n -En en caso de que la licitación de este tipo de contratos tenga un tiempo de demora similar a otro tipo de licitaciones, si el actual contrato marco de servicios geológicos actual dura hasta octubre completo, la solped para el nuevo ya estaría atrasada en una semana. En caso de que éste dure hasta noviembre completo, habrían 2 semanas de holgura aún."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1871,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "425-XL-005",
+    "jefe_proyecto": "",
+    "eecc": "",
+    "proyecto": "Exploración geológica prospecto panulcillo",
+    "servicio": "Sondajes Etapa 2",
+    "autor": "Daniela Campos",
+    "fecha": "2025-07-10",
+    "comentario": "Se reiteran las siguientes alertas:\n -Aún se encuentra pendiente el Decreto de Identificación para Panulcillo.\n -Es crítico el tema de los sondajes, en el caso de Panulcillo no está definido cómo se realizará, al parecer quedará fuera del contrato marco de pérforaciones y se encontraría abierta la opción de otros medios como el servicio de Minera Cruz.\nEl retraso actual en el inicio de este servicio, (de agosto a octubre), está generando que 705.872 USD NETO proyectados a pagar en 2025 pasen a 2026, esto sin considerar los demás servicios que también se ven afectados por este retraso."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1872,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "320-XL-001",
+    "jefe_proyecto": "",
+    "eecc": "Geoexploraciones",
+    "proyecto": "Exploración geológica Distrito Pastenes",
+    "servicio": "Geofísica Etapa 2",
+    "autor": "Daniela Campos",
+    "fecha": "2025-07-10",
+    "comentario": "-Este contratista ha sido particularmente deficiente dentro de la gestión documental, esto ha afectado en que a pesar de que se han reportado avances satisfactorios en general, estos no han sido entregados de una manera oficial y por ende en su mayoría aún no se han reflejado en el avance físico. Esto ha ocurrido a pesar de las capacitaciones, aclaraciones vía correo y en reuniones oficiales, y el ofrecimiento de diversas intancias extraordinarias para subsanar la situación. Esta semana se llevaron a cabo reuniones extraordinarias con control documental, por lo que se espera tener la regularización de la mayoría de los entregables para la próxima semana.\n  -Este servicio comenzó su ejecución el 28-04-2025, tiene una duración de 150 días, por lo que debería completarse para el 25 de septiembre del presente año, sin embargo, se espera que el servicio complete su avance físico durante julio. Esto dado que ya se encuentran elaborando el informe final y tendrían pendiente regularizar el tema documental."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1873,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "324-XL-003",
+    "jefe_proyecto": "",
+    "eecc": "DV Drilling",
+    "proyecto": "Exploración y valorización propiedad minera Cerro Negro y alrededores",
+    "servicio": "Perforaciones 8.200 metros",
+    "autor": "Daniela Campos",
+    "fecha": "2025-07-10",
+    "comentario": "Hasta el día lunes 7 de julio se tienen en total 4.838,25 metros perforados, (436,2 metros más que los 4.402,05 metros perforados hasta el lunes pasado), es decir, en total se tienen 3.361,75 metros pendientes por perforar.\nEn caso de mantenerse los promedios de productividad actuales, y las 4 máquinas, para el 30 de julio se proyectan 6.610 metros perforados, 1.590 metros menos de los 8.200 metros planificados. No es factible cumplir la meta de los 8.200 metros ya que se necesitaría un promedio de perforación de 153 metros/día, y actualmente se tiene un promedio de 77,46 metros/día considerando las 4 máquinas."
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1874,
+  "fields": {
+    "prioridad": null,
+    "codigo_proyecto": "GDP-2025-23",
+    "jefe_proyecto": "",
+    "eecc": "Sandvik",
+    "proyecto": "Adquisición Chanchadores primarios y secundarios Taltal y PDC Barriles",
+    "servicio": "Adquisición Chanchadores primarios y secundarios Taltal y PDC Barriles",
+    "autor": "Kamila Tamblay",
+    "fecha": "2025-07-10",
+    "comentario": "Se adjudica licitación a la empresa SANDVIK para la compra de chancadores"
+  }
+},
+{
+  "model": "estatus.estatussemanal",
+  "pk": 1875,
+  "fields": {
+    "prioridad": 1,
+    "codigo_proyecto": "2323",
+    "jefe_proyecto": "Test",
+    "eecc": "Test",
+    "proyecto": "Test",
+    "servicio": "Test",
+    "autor": "Test",
+    "fecha": "2025-07-18",
+    "comentario": "Test Test"
+  }
+}
+]

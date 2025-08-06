@@ -1,0 +1,3998 @@
+[
+{
+  "model": "proyectos.proyecto",
+  "pk": 2,
+  "fields": {
+    "numero": 1,
+    "codigo": "320-XL-001",
+    "tipo_epi_api": "EPI DM",
+    "area": "DM",
+    "nombre": "Exploración geológica Distrito Pastenes",
+    "estado": "Identificado",
+    "ppto_total": "4277000.00",
+    "ppto_gaf_2025": "150000.00",
+    "identificado_2025": "150000.00",
+    "proyectado_p6_2025": "93773.00",
+    "ejecutado": "24178.60"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 3,
+  "fields": {
+    "numero": 2,
+    "codigo": "321-XL-002",
+    "tipo_epi_api": "EPI DM",
+    "area": "DM",
+    "nombre": "Exploración geológica Distrito Agua Amarga",
+    "estado": "Identificado",
+    "ppto_total": "4392000.00",
+    "ppto_gaf_2025": "1000000.00",
+    "identificado_2025": "1000000.00",
+    "proyectado_p6_2025": "430896.28",
+    "ejecutado": "33401.94"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 4,
+  "fields": {
+    "numero": 3,
+    "codigo": "322-EL-156",
+    "tipo_epi_api": "EPI",
+    "area": "LI",
+    "nombre": "Estudio de exploración básica salares ENAMI",
+    "estado": "Identificado",
+    "ppto_total": "16414000.00",
+    "ppto_gaf_2025": "4326000.00",
+    "identificado_2025": "4326000.00",
+    "proyectado_p6_2025": "3342650.39",
+    "ejecutado": "96004.29"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 5,
+  "fields": {
+    "numero": 4,
+    "codigo": "422-PD-048",
+    "tipo_epi_api": "API",
+    "area": "CO",
+    "nombre": "Ingeniería de detalles y construcción ampliación depósito de relaves Planta Delta etapa I",
+    "estado": "Identificado",
+    "ppto_total": "6198000.00",
+    "ppto_gaf_2025": "1396700.00",
+    "identificado_2025": "1396700.00",
+    "proyectado_p6_2025": "2926790.00",
+    "ejecutado": "797053.86"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 6,
+  "fields": {
+    "numero": 5,
+    "codigo": "322-PS-052",
+    "tipo_epi_api": "API",
+    "area": "CO",
+    "nombre": "Obras de regularización del crecimiento de botaderos de ripios 1 y 2",
+    "estado": "Identificado",
+    "ppto_total": "7939000.00",
+    "ppto_gaf_2025": "2029400.00",
+    "identificado_2025": "2029400.00",
+    "proyectado_p6_2025": "3861560.00",
+    "ejecutado": "1115773.27"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 7,
+  "fields": {
+    "numero": 6,
+    "codigo": "222-ET-053",
+    "tipo_epi_api": "EPI",
+    "area": "IN",
+    "nombre": "Ingeniería básica avanzada y ambiental depósito de ripios Planta Taltal",
+    "estado": "Identificado",
+    "ppto_total": "330000.00",
+    "ppto_gaf_2025": "20000.00",
+    "identificado_2025": "20000.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.17"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 8,
+  "fields": {
+    "numero": 7,
+    "codigo": "323-PU-009",
+    "tipo_epi_api": "API",
+    "area": "IN",
+    "nombre": "Instrumentación en pozos de aguas subterráneas por cambio del código de aguas y transmisión en línea",
+    "estado": "Identificado",
+    "ppto_total": "2010800.00",
+    "ppto_gaf_2025": "671500.00",
+    "identificado_2025": "671500.00",
+    "proyectado_p6_2025": "1149479.50",
+    "ejecutado": "49131.94"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 9,
+  "fields": {
+    "numero": 8,
+    "codigo": "424-PD-053",
+    "tipo_epi_api": "API",
+    "area": "CO",
+    "nombre": "Construcción cúpula cono fino planta súlfuros.",
+    "estado": "Identificado",
+    "ppto_total": "185000.00",
+    "ppto_gaf_2025": "165000.00",
+    "identificado_2025": "165000.00",
+    "proyectado_p6_2025": "23177.00",
+    "ejecutado": "25362.93"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 10,
+  "fields": {
+    "numero": 9,
+    "codigo": "324-PS-064",
+    "tipo_epi_api": "API",
+    "area": "IN",
+    "nombre": "Ingeniería de detalle y construcción galpón testigoteca, estanterías y equipamiento operativo - El Salado",
+    "estado": "Identificado",
+    "ppto_total": "350000.00",
+    "ppto_gaf_2025": "289000.00",
+    "identificado_2025": "289000.00",
+    "proyectado_p6_2025": "200884.00",
+    "ejecutado": "5804.81"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 11,
+  "fields": {
+    "numero": 10,
+    "codigo": "324-XL-003",
+    "tipo_epi_api": "EPI DM",
+    "area": "CN",
+    "nombre": "Exploración y valorización propiedad minera Cerro Negro y alrededores",
+    "estado": "Identificado",
+    "ppto_total": "8127319.00",
+    "ppto_gaf_2025": "2000000.00",
+    "identificado_2025": "2000000.00",
+    "proyectado_p6_2025": "3451782.11",
+    "ejecutado": "697136.67"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 12,
+  "fields": {
+    "numero": 11,
+    "codigo": "324-PM-081",
+    "tipo_epi_api": "API",
+    "area": "IN",
+    "nombre": "Ingeniería de detalles y construcción depósito de relaves filtrados Planta Matta",
+    "estado": "Identificado",
+    "ppto_total": "15909115.00",
+    "ppto_gaf_2025": "1511900.00",
+    "identificado_2025": "1511900.00",
+    "proyectado_p6_2025": "2188750.00",
+    "ejecutado": "408139.31"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 13,
+  "fields": {
+    "numero": 12,
+    "codigo": "324-ES-065",
+    "tipo_epi_api": "EPI",
+    "area": "IN",
+    "nombre": "Estudio de diagnóstico nave SX y EW Planta El Salado",
+    "estado": "Identificado",
+    "ppto_total": "293037.00",
+    "ppto_gaf_2025": "322000.00",
+    "identificado_2025": "322000.00",
+    "proyectado_p6_2025": "336114.00",
+    "ejecutado": "13302.60"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 14,
+  "fields": {
+    "numero": 13,
+    "codigo": "324-ES-062",
+    "tipo_epi_api": "EPI",
+    "area": "IN",
+    "nombre": "Ingeniería básica regularización aducción de agua Planta El Salado",
+    "estado": "Identificado",
+    "ppto_total": "294000.00",
+    "ppto_gaf_2025": "196400.00",
+    "identificado_2025": "196400.00",
+    "proyectado_p6_2025": "294000.00",
+    "ejecutado": "97732.16"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 15,
+  "fields": {
+    "numero": 14,
+    "codigo": "324-PS-063",
+    "tipo_epi_api": "API",
+    "area": "CO",
+    "nombre": "Reposición de estanque de ácido planta el salado",
+    "estado": "Identificado",
+    "ppto_total": "554200.00",
+    "ppto_gaf_2025": "548700.00",
+    "identificado_2025": "548700.00",
+    "proyectado_p6_2025": "152685.00",
+    "ejecutado": "7301.78"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 16,
+  "fields": {
+    "numero": 15,
+    "codigo": "324-PM-086",
+    "tipo_epi_api": "API",
+    "area": "IN",
+    "nombre": "Ingeniería de Detalle y Construcción de nuevo layout de línea de impulsión agua fresca Planta Matta",
+    "estado": "Identificado",
+    "ppto_total": "2688693.00",
+    "ppto_gaf_2025": "500000.00",
+    "identificado_2025": "500000.00",
+    "proyectado_p6_2025": "191031.00",
+    "ejecutado": "10938.72"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 17,
+  "fields": {
+    "numero": 16,
+    "codigo": "324-EP-029",
+    "tipo_epi_api": "EPI",
+    "area": "IN",
+    "nombre": "Estudio de ingeniería conceptual empalme eléctrico Planta Matta y Fundición HVL",
+    "estado": "Identificado",
+    "ppto_total": "163800.00",
+    "ppto_gaf_2025": "145700.00",
+    "identificado_2025": "145700.00",
+    "proyectado_p6_2025": "196001.00",
+    "ejecutado": "18211.57"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 18,
+  "fields": {
+    "numero": 17,
+    "codigo": "424-ED-058",
+    "tipo_epi_api": "EPI",
+    "area": "IN",
+    "nombre": "Estudio de aumento de capacidad de procesamiento y recuperacion de especies de interés",
+    "estado": "Identificado",
+    "ppto_total": "220000.00",
+    "ppto_gaf_2025": "217800.00",
+    "identificado_2025": "217800.00",
+    "proyectado_p6_2025": "222759.00",
+    "ejecutado": "7130.99"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 19,
+  "fields": {
+    "numero": 18,
+    "codigo": "324-EM-082",
+    "tipo_epi_api": "EPI",
+    "area": "IN",
+    "nombre": "Ingeniería básica (factibilidad) mejora y reforzamiento Tank Farm Planta Matta",
+    "estado": "Identificado",
+    "ppto_total": "452900.00",
+    "ppto_gaf_2025": "346700.00",
+    "identificado_2025": "346700.00",
+    "proyectado_p6_2025": "241522.00",
+    "ejecutado": "189060.76"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 20,
+  "fields": {
+    "numero": 19,
+    "codigo": "424-ED-057",
+    "tipo_epi_api": "EPI",
+    "area": "IN",
+    "nombre": "Ingeniería pre-factibilidad continuidad operacional largo plazo depósito de relaves Planta Delta",
+    "estado": "Identificado",
+    "ppto_total": "460900.00",
+    "ppto_gaf_2025": "397300.00",
+    "identificado_2025": "397300.00",
+    "proyectado_p6_2025": "287150.00",
+    "ejecutado": "13766.80"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 21,
+  "fields": {
+    "numero": 20,
+    "codigo": "324-PM-083",
+    "tipo_epi_api": "API",
+    "area": "IN",
+    "nombre": "Habilitación Estructura y Equipos Chancado Terciario - Línea 2 P. Matta",
+    "estado": "Eliminado",
+    "ppto_total": "1933400.00",
+    "ppto_gaf_2025": "600000.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 22,
+  "fields": {
+    "numero": 21,
+    "codigo": "324-PV-066",
+    "tipo_epi_api": "API",
+    "area": "IN",
+    "nombre": "Ingeniería de detalles y construcción depósito de ripios Planta Vallenar etapa I",
+    "estado": "Identificado",
+    "ppto_total": "2921000.00",
+    "ppto_gaf_2025": "266000.00",
+    "identificado_2025": "266000.00",
+    "proyectado_p6_2025": "380256.26",
+    "ejecutado": "395812.95"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 23,
+  "fields": {
+    "numero": 22,
+    "codigo": "325-PG-030",
+    "tipo_epi_api": "API",
+    "area": "IN",
+    "nombre": "Implementación de sistema de monitoreo y gestión energética",
+    "estado": "Identificado",
+    "ppto_total": "1395949.00",
+    "ppto_gaf_2025": "600000.00",
+    "identificado_2025": "600000.00",
+    "proyectado_p6_2025": "264434.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 24,
+  "fields": {
+    "numero": 23,
+    "codigo": "224-PT-061",
+    "tipo_epi_api": "API",
+    "area": "IN",
+    "nombre": "Ingeniería detalles, compras y construcción poder de compras de minerales en el sector de las Breas Taltal",
+    "estado": "Identificado",
+    "ppto_total": "6824423.00",
+    "ppto_gaf_2025": "1600000.00",
+    "identificado_2025": "1600000.00",
+    "proyectado_p6_2025": "538883.00",
+    "ejecutado": "44693.88"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 25,
+  "fields": {
+    "numero": 24,
+    "codigo": "325-EL-157",
+    "tipo_epi_api": "EPI",
+    "area": "LI",
+    "nombre": "Estudio de exploración básica complementaria Salares Altoandinos",
+    "estado": "Identificado",
+    "ppto_total": "11988000.00",
+    "ppto_gaf_2025": "11988000.00",
+    "identificado_2025": "11988000.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "2680693.08"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 26,
+  "fields": {
+    "numero": 25,
+    "codigo": "GDP-2025-3",
+    "tipo_epi_api": "EPI DM",
+    "area": "DM",
+    "nombre": "Exploración y Valorización de Propiedades mineras con potencial extracción de Cu-Co-Mn",
+    "estado": "Presupuestado",
+    "ppto_total": "4000000.00",
+    "ppto_gaf_2025": "100000.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 27,
+  "fields": {
+    "numero": 26,
+    "codigo": "325-PG-033",
+    "tipo_epi_api": "EPI",
+    "area": "IN",
+    "nombre": "Actualización de la Ingeniería de planes de cierre de faenas FHVL y TALTAL",
+    "estado": "Identificado",
+    "ppto_total": "1106799.00",
+    "ppto_gaf_2025": "200000.00",
+    "identificado_2025": "200000.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 28,
+  "fields": {
+    "numero": 27,
+    "codigo": "225-ET-064",
+    "tipo_epi_api": "EPI",
+    "area": "IN",
+    "nombre": "Ing. Conceptual Planta de Oxidos y poder de compras sulfuros en las breas.",
+    "estado": "Ingresado MDSF-C",
+    "ppto_total": "600000.00",
+    "ppto_gaf_2025": "300000.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 29,
+  "fields": {
+    "numero": 28,
+    "codigo": "324-GF-028",
+    "tipo_epi_api": "API/GORE",
+    "area": "IN",
+    "nombre": "Reposición equipos chancadores comunas de Copiapó y Chañaral, planteles Manuel Antonio Matta y Osvaldo Martínez (GORE)",
+    "estado": "Identificado",
+    "ppto_total": "1996000.00",
+    "ppto_gaf_2025": "1966800.00",
+    "identificado_2025": "1966800.00",
+    "proyectado_p6_2025": "1302407.00",
+    "ejecutado": "9889.98"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 30,
+  "fields": {
+    "numero": 29,
+    "codigo": "GDP-2025-6",
+    "tipo_epi_api": "API",
+    "area": "IN",
+    "nombre": "Ingeniería Detalle y Construcción 2° Peraltamiento Depósito de Relaves",
+    "estado": "Presupuestado",
+    "ppto_total": "2800000.00",
+    "ppto_gaf_2025": "21636.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 31,
+  "fields": {
+    "numero": 30,
+    "codigo": "GDP-2025-7",
+    "tipo_epi_api": "EPI",
+    "area": "IN",
+    "nombre": "Ingeniería factibilidad depósito de relaves filtrados",
+    "estado": "Postergado 26",
+    "ppto_total": "350000.00",
+    "ppto_gaf_2025": "4273.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 32,
+  "fields": {
+    "numero": 31,
+    "codigo": "GDP-2025-8",
+    "tipo_epi_api": "API",
+    "area": "IN",
+    "nombre": "Ing. Detalle Construcción Botadero de Ripios 3 Planta El Salado",
+    "estado": "Presupuestado",
+    "ppto_total": "6000000.00",
+    "ppto_gaf_2025": "31818.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 33,
+  "fields": {
+    "numero": 32,
+    "codigo": "GDP-2025-9",
+    "tipo_epi_api": "API",
+    "area": "IN",
+    "nombre": "Reemplazo equipo chancador terciario planta delta",
+    "estado": "Eliminado",
+    "ppto_total": "1500000.00",
+    "ppto_gaf_2025": "1500000.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 34,
+  "fields": {
+    "numero": 33,
+    "codigo": "425-ED-060",
+    "tipo_epi_api": "EPI",
+    "area": "IN",
+    "nombre": "Ingeniería Factibilidad, Mejora Cancha de Recepción Distrito Delta.",
+    "estado": "Ingresado MDSF-C",
+    "ppto_total": "250000.00",
+    "ppto_gaf_2025": "3364.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 35,
+  "fields": {
+    "numero": 34,
+    "codigo": "GDP-2025-11",
+    "tipo_epi_api": "EPI",
+    "area": "IN",
+    "nombre": "Estudio Implementación laboratorio fundición para análisis de Oro y Plata Planta Delta",
+    "estado": "Presupuestado",
+    "ppto_total": "160000.00",
+    "ppto_gaf_2025": "141033.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 36,
+  "fields": {
+    "numero": 35,
+    "codigo": "325-EO-002",
+    "tipo_epi_api": "EPI",
+    "area": "IN",
+    "nombre": "Ing. de Factibilidad, Obras Civiles Obtención Permisos Sectoriales (ETAPA- PTAS)",
+    "estado": "Ingresado MDSF-C",
+    "ppto_total": "300000.00",
+    "ppto_gaf_2025": "150000.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 37,
+  "fields": {
+    "numero": 36,
+    "codigo": "GDP-2025-13",
+    "tipo_epi_api": "EPI",
+    "area": "IN",
+    "nombre": "Ingeniería Pre-Factibilidad, Nuevo Distrito Minero Salado Norte.",
+    "estado": "Postergado 26",
+    "ppto_total": "500000.00",
+    "ppto_gaf_2025": "316667.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 38,
+  "fields": {
+    "numero": 37,
+    "codigo": "325-PC-032",
+    "tipo_epi_api": "API",
+    "area": "IN",
+    "nombre": "Laboratorio Químico, muestreo y preparación FHVL",
+    "estado": "Ingresado MDSF-C",
+    "ppto_total": "876000.00",
+    "ppto_gaf_2025": "876000.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 39,
+  "fields": {
+    "numero": 38,
+    "codigo": "GDP-2025-15",
+    "tipo_epi_api": "EPI",
+    "area": "IN",
+    "nombre": "Ingeniería factibilidad, optimización planta concentradora para aumentar recuperaciones metalurgicas con aumento de capacidad de flotación y molienda sulfuro, e incorporación de concentración de miner",
+    "estado": "Postergado 26",
+    "ppto_total": "300000.00",
+    "ppto_gaf_2025": "264437.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 40,
+  "fields": {
+    "numero": 39,
+    "codigo": "GDP-2025-16",
+    "tipo_epi_api": "API",
+    "area": "IN",
+    "nombre": "Chancador Primario Línea N°3 de Agencia de Compras. Planta.",
+    "estado": "Eliminado",
+    "ppto_total": "300000.00",
+    "ppto_gaf_2025": "35227.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 41,
+  "fields": {
+    "numero": 40,
+    "codigo": "GDP-2025-17",
+    "tipo_epi_api": "API",
+    "area": "IN",
+    "nombre": "Ing. detalles y construcción scrubber para Aglomerado (Reemplazo existente) Planta Salado",
+    "estado": "Presupuestado",
+    "ppto_total": "350000.00",
+    "ppto_gaf_2025": "16811.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 42,
+  "fields": {
+    "numero": 41,
+    "codigo": "GDP-2025-18",
+    "tipo_epi_api": "EPI",
+    "area": "IN",
+    "nombre": "Estudio conceptual de derrames soluciones ácidas y concentraducto - Sistema de alerta temprana de derrames",
+    "estado": "Presupuestado",
+    "ppto_total": "280000.00",
+    "ppto_gaf_2025": "55949.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 43,
+  "fields": {
+    "numero": 42,
+    "codigo": "425-PG-069",
+    "tipo_epi_api": "EPI",
+    "area": "IN",
+    "nombre": "Ingeniería prefactibilidad, Alternativa a Poder de Compra Los Robles (Rancagua) ",
+    "estado": "Ingresado MDSF-C",
+    "ppto_total": "250000.00",
+    "ppto_gaf_2025": "220364.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 44,
+  "fields": {
+    "numero": 43,
+    "codigo": "425-EG-070",
+    "tipo_epi_api": "EPI",
+    "area": "IN",
+    "nombre": "Ingeniería prefactibilidad, traslado poder de compra Illapel",
+    "estado": "Ingresado MDSF-C",
+    "ppto_total": "200000.00",
+    "ppto_gaf_2025": "176291.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 45,
+  "fields": {
+    "numero": 44,
+    "codigo": "324-GF-027",
+    "tipo_epi_api": "API/GORE",
+    "area": "IN",
+    "nombre": "Reposición equipos chancadores comunas de Tocopilla y Taltal, poderes de compra Barriles (Tocopilla) y planta Taltal (GORE)",
+    "estado": "Identificado",
+    "ppto_total": "2319000.00",
+    "ppto_gaf_2025": "1494200.00",
+    "identificado_2025": "1494200.00",
+    "proyectado_p6_2025": "1101961.00",
+    "ejecutado": "5133.88"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 46,
+  "fields": {
+    "numero": 45,
+    "codigo": "325-PS-068",
+    "tipo_epi_api": "API",
+    "area": "IN",
+    "nombre": "Ingeniería de detalle y Contrucción Línea de Chancado N°1 Planta El Salado",
+    "estado": "Ingresado MDSF-C",
+    "ppto_total": "310000.00",
+    "ppto_gaf_2025": "310000.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 47,
+  "fields": {
+    "numero": 46,
+    "codigo": "325-EO-001",
+    "tipo_epi_api": "EPI",
+    "area": "IN",
+    "nombre": "Estudio básico para el control de emisiones de material particulado",
+    "estado": "Ingresado MDSF-C",
+    "ppto_total": "280000.00",
+    "ppto_gaf_2025": "100000.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 48,
+  "fields": {
+    "numero": 47,
+    "codigo": "GDP-2025-23",
+    "tipo_epi_api": "API",
+    "area": "IN",
+    "nombre": "Ing. detalles y construccion canales de contorno",
+    "estado": "Presupuestado",
+    "ppto_total": "4200000.00",
+    "ppto_gaf_2025": "77000.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 49,
+  "fields": {
+    "numero": 48,
+    "codigo": "225-PT-063",
+    "tipo_epi_api": "API",
+    "area": "IN",
+    "nombre": "Ingeniería detalles y permisos nuevo depósito de ripios etapa I, Planta José Antonio Moreno - Taltal",
+    "estado": "Identificado",
+    "ppto_total": "740000.00",
+    "ppto_gaf_2025": "740000.00",
+    "identificado_2025": "740000.00",
+    "proyectado_p6_2025": "591538.00",
+    "ejecutado": "12341.21"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 50,
+  "fields": {
+    "numero": 49,
+    "codigo": "325-EG-034",
+    "tipo_epi_api": "EPI",
+    "area": "IN",
+    "nombre": "Evaluación de Alternativas de Sistemas de Detección y Extinción de Incendios en Planta LIX-SX-EW",
+    "estado": "Recomendado",
+    "ppto_total": "488700.00",
+    "ppto_gaf_2025": "0.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 51,
+  "fields": {
+    "numero": 50,
+    "codigo": "425-XL-005",
+    "tipo_epi_api": "EPI DM",
+    "area": "DM",
+    "nombre": "Exploracion geologica prospecto panulcillo",
+    "estado": "Identificado",
+    "ppto_total": "3803000.00",
+    "ppto_gaf_2025": "1866273.00",
+    "identificado_2025": "1866273.00",
+    "proyectado_p6_2025": "430896.28",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.proyecto",
+  "pk": 52,
+  "fields": {
+    "numero": 51,
+    "codigo": "225-PT-066",
+    "tipo_epi_api": "API",
+    "area": "IN",
+    "nombre": "Construcción Nuevo Depósito de Ripios Planta Taltal",
+    "estado": "Ingresado MDSF-C",
+    "ppto_total": "0.00",
+    "ppto_gaf_2025": "0.00",
+    "identificado_2025": "0.00",
+    "proyectado_p6_2025": "0.00",
+    "ejecutado": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 202,
+  "fields": {
+    "proyecto": 2,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "25.00",
+    "agosto": "25.00",
+    "septiembre": "25.00",
+    "octubre": "25.00",
+    "noviembre": "25.00",
+    "diciembre": "25.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 203,
+  "fields": {
+    "proyecto": 2,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "84.08",
+    "mayo": "19468.56",
+    "junio": "2439.96",
+    "julio": "28390.09",
+    "agosto": "43390.31",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 204,
+  "fields": {
+    "proyecto": 2,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "84.00",
+    "mayo": "19469.00",
+    "junio": "2.44",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 205,
+  "fields": {
+    "proyecto": 3,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "50000.00",
+    "febrero": "50000.00",
+    "marzo": "50000.00",
+    "abril": "50000.00",
+    "mayo": "79702.00",
+    "junio": "106766.00",
+    "julio": "106766.00",
+    "agosto": "106766.00",
+    "septiembre": "106766.00",
+    "octubre": "106766.00",
+    "noviembre": "106766.00",
+    "diciembre": "79702.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 206,
+  "fields": {
+    "proyecto": 3,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "3695.95",
+    "febrero": "4891.52",
+    "marzo": "8386.84",
+    "abril": "1118.06",
+    "mayo": "4754.20",
+    "junio": "8192.53",
+    "julio": "4536.06",
+    "agosto": "135508.35",
+    "septiembre": "77311.57",
+    "octubre": "126815.69",
+    "noviembre": "95319.41",
+    "diciembre": "420847.82"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 207,
+  "fields": {
+    "proyecto": 3,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "3696.00",
+    "febrero": "4892.00",
+    "marzo": "8387.00",
+    "abril": "1118.00",
+    "mayo": "4754.00",
+    "junio": "8193.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 208,
+  "fields": {
+    "proyecto": 4,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "1756535.00",
+    "febrero": "66587.00",
+    "marzo": "232.38",
+    "abril": "466144.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 209,
+  "fields": {
+    "proyecto": 4,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "-1880077.00",
+    "febrero": "497810.00",
+    "marzo": "514334.00",
+    "abril": "935492.00",
+    "mayo": "-65957.00",
+    "junio": "94650.00",
+    "julio": "1236172.71",
+    "agosto": "590453.13",
+    "septiembre": "386544.13",
+    "octubre": "199087.75",
+    "noviembre": "212514.13",
+    "diciembre": "621626.53"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 210,
+  "fields": {
+    "proyecto": 4,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "-1880077.00",
+    "febrero": "497810.00",
+    "marzo": "514334.00",
+    "abril": "935492.00",
+    "mayo": "-65957.00",
+    "junio": "94650.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 211,
+  "fields": {
+    "proyecto": 5,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "149756.00",
+    "febrero": "149756.00",
+    "marzo": "149756.00",
+    "abril": "149756.00",
+    "mayo": "149756.00",
+    "junio": "149756.00",
+    "julio": "149756.00",
+    "agosto": "170702.00",
+    "septiembre": "40375.00",
+    "octubre": "42211.00",
+    "noviembre": "47556.00",
+    "diciembre": "47556.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 212,
+  "fields": {
+    "proyecto": 5,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "-10978.00",
+    "febrero": "28105.00",
+    "marzo": "13149.00",
+    "abril": "99355.00",
+    "mayo": "133039.00",
+    "junio": "532193.00",
+    "julio": "369578.00",
+    "agosto": "168325.00",
+    "septiembre": "293764.00",
+    "octubre": "413958.00",
+    "noviembre": "463173.00",
+    "diciembre": "423129.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 213,
+  "fields": {
+    "proyecto": 5,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "-10979.00",
+    "febrero": "28105.00",
+    "marzo": "13149.00",
+    "abril": "99355.00",
+    "mayo": "133039.00",
+    "junio": "532193.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 214,
+  "fields": {
+    "proyecto": 6,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "118170.00",
+    "febrero": "148773.00",
+    "marzo": "148773.00",
+    "abril": "148773.00",
+    "mayo": "148773.00",
+    "junio": "148773.00",
+    "julio": "148773.00",
+    "agosto": "148773.00",
+    "septiembre": "148773.00",
+    "octubre": "253456.00",
+    "noviembre": "233791.00",
+    "diciembre": "233791.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 215,
+  "fields": {
+    "proyecto": 6,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "4000.00",
+    "febrero": "4149.00",
+    "marzo": "4396.00",
+    "abril": "275681.00",
+    "mayo": "364845.00",
+    "junio": "453461.00",
+    "julio": "269605.00",
+    "agosto": "508916.00",
+    "septiembre": "41616.00",
+    "octubre": "292527.00",
+    "noviembre": "488339.00",
+    "diciembre": "1154025.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 216,
+  "fields": {
+    "proyecto": 6,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "3999.75",
+    "febrero": "4148.82",
+    "marzo": "4396.17",
+    "abril": "275680.89",
+    "mayo": "364844.64",
+    "junio": "453456.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 217,
+  "fields": {
+    "proyecto": 7,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 218,
+  "fields": {
+    "proyecto": 7,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 219,
+  "fields": {
+    "proyecto": 8,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "35.00",
+    "febrero": "35.00",
+    "marzo": "35.00",
+    "abril": "35.00",
+    "mayo": "42.16",
+    "junio": "69.91",
+    "julio": "69.91",
+    "agosto": "69.91",
+    "septiembre": "69.91",
+    "octubre": "69.91",
+    "noviembre": "69.91",
+    "diciembre": "69.91"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 220,
+  "fields": {
+    "proyecto": 8,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "46246.74",
+    "julio": "50406.29",
+    "agosto": "76653.11",
+    "septiembre": "96336.22",
+    "octubre": "177231.99",
+    "noviembre": "679236.29",
+    "diciembre": "23368.86"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 221,
+  "fields": {
+    "proyecto": 8,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "23969.00",
+    "febrero": "297.00",
+    "marzo": "570.00",
+    "abril": "590.00",
+    "mayo": "12963.00",
+    "junio": "6765.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 222,
+  "fields": {
+    "proyecto": 9,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "3123.00",
+    "febrero": "9964.00",
+    "marzo": "19559.00",
+    "abril": "29637.00",
+    "mayo": "39090.00",
+    "junio": "45903.00",
+    "julio": "42924.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 223,
+  "fields": {
+    "proyecto": 9,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "19558.00",
+    "abril": "0.00",
+    "mayo": "1186.00",
+    "junio": "2433.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 224,
+  "fields": {
+    "proyecto": 9,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "19558.00",
+    "abril": "0.00",
+    "mayo": "1186.00",
+    "junio": "2433.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 225,
+  "fields": {
+    "proyecto": 10,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "5079.00",
+    "febrero": "19704.00",
+    "marzo": "36617.00",
+    "abril": "19009.00",
+    "mayo": "45263.00",
+    "junio": "69700.00",
+    "julio": "153642.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 226,
+  "fields": {
+    "proyecto": 10,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "1186.00",
+    "junio": "2433.00",
+    "julio": "2735.00",
+    "agosto": "18141.00",
+    "septiembre": "37691.00",
+    "octubre": "21030.00",
+    "noviembre": "40910.00",
+    "diciembre": "76758.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 227,
+  "fields": {
+    "proyecto": 10,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "1186.00",
+    "junio": "2433.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 228,
+  "fields": {
+    "proyecto": 11,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "32609.00",
+    "febrero": "54916.00",
+    "marzo": "71776.00",
+    "abril": "67346.00",
+    "mayo": "51180.00",
+    "junio": "111080.00",
+    "julio": "195159.00",
+    "agosto": "334402.00",
+    "septiembre": "357747.00",
+    "octubre": "323785.00",
+    "noviembre": "226720.00",
+    "diciembre": "173280.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 229,
+  "fields": {
+    "proyecto": 11,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "3434.74",
+    "marzo": "4559.53",
+    "abril": "176250.22",
+    "mayo": "8439.43",
+    "junio": "403292.05",
+    "julio": "4438.34",
+    "agosto": "674647.95",
+    "septiembre": "881247.29",
+    "octubre": "656165.93",
+    "noviembre": "320996.38",
+    "diciembre": "318310.25"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 230,
+  "fields": {
+    "proyecto": 11,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "3435.00",
+    "marzo": "4560.00",
+    "abril": "176250.00",
+    "mayo": "8439.00",
+    "junio": "403292.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 231,
+  "fields": {
+    "proyecto": 12,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "81380.00",
+    "febrero": "96765.00",
+    "marzo": "127742.00",
+    "abril": "58224.00",
+    "mayo": "8678.00",
+    "junio": "8961.00",
+    "julio": "10442.00",
+    "agosto": "11521.00",
+    "septiembre": "163704.00",
+    "octubre": "163704.00",
+    "noviembre": "400000.00",
+    "diciembre": "380818.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 232,
+  "fields": {
+    "proyecto": 12,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "30015.00",
+    "febrero": "46744.00",
+    "marzo": "125917.00",
+    "abril": "56097.00",
+    "mayo": "97124.00",
+    "junio": "0.00",
+    "julio": "253929.00",
+    "agosto": "7496.00",
+    "septiembre": "8017.00",
+    "octubre": "543265.00",
+    "noviembre": "474486.00",
+    "diciembre": "545660.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 233,
+  "fields": {
+    "proyecto": 12,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "-9943.00",
+    "febrero": "46540.00",
+    "marzo": "125919.00",
+    "abril": "56095.00",
+    "mayo": "102615.00",
+    "junio": "80185.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 234,
+  "fields": {
+    "proyecto": 13,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "3462.00",
+    "marzo": "6204.00",
+    "abril": "60595.00",
+    "mayo": "91507.00",
+    "junio": "48722.00",
+    "julio": "55496.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 235,
+  "fields": {
+    "proyecto": 13,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "10899.00",
+    "mayo": "16599.00",
+    "junio": "43321.00",
+    "julio": "37800.00",
+    "agosto": "65923.00",
+    "septiembre": "70552.00",
+    "octubre": "37052.00",
+    "noviembre": "53968.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 236,
+  "fields": {
+    "proyecto": 13,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "272.00",
+    "mayo": "3813.00",
+    "junio": "7032.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 237,
+  "fields": {
+    "proyecto": 14,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "105484.00",
+    "febrero": "87284.00",
+    "marzo": "3624.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 238,
+  "fields": {
+    "proyecto": 14,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "5650.00",
+    "febrero": "9463.00",
+    "marzo": "46231.00",
+    "abril": "39491.00",
+    "mayo": "84445.00",
+    "junio": "48384.00",
+    "julio": "52246.00",
+    "agosto": "8090.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 239,
+  "fields": {
+    "proyecto": 14,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "2119.00",
+    "mayo": "6159.00",
+    "junio": "87268.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 240,
+  "fields": {
+    "proyecto": 15,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "24135.00",
+    "febrero": "80403.00",
+    "marzo": "110473.00",
+    "abril": "173066.00",
+    "mayo": "58323.00",
+    "junio": "102275.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 241,
+  "fields": {
+    "proyecto": 15,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "21513.00",
+    "marzo": "81578.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "2016.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "2776.00",
+    "noviembre": "7123.00",
+    "diciembre": "37679.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 242,
+  "fields": {
+    "proyecto": 15,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "1694.00",
+    "junio": "3421.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 243,
+  "fields": {
+    "proyecto": 16,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "775.00",
+    "marzo": "34336.00",
+    "abril": "67614.00",
+    "mayo": "92153.00",
+    "junio": "121829.00",
+    "julio": "29273.00",
+    "agosto": "30031.00",
+    "septiembre": "30031.00",
+    "octubre": "30031.00",
+    "noviembre": "30031.00",
+    "diciembre": "26921.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 244,
+  "fields": {
+    "proyecto": 16,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "1876.00",
+    "abril": "2304.00",
+    "mayo": "2944.00",
+    "junio": "4354.00",
+    "julio": "5933.00",
+    "agosto": "7609.00",
+    "septiembre": "9614.00",
+    "octubre": "15912.00",
+    "noviembre": "61827.00",
+    "diciembre": "78658.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 245,
+  "fields": {
+    "proyecto": 16,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "2796.00",
+    "junio": "5957.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 246,
+  "fields": {
+    "proyecto": 17,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "30847.00",
+    "febrero": "48897.00",
+    "marzo": "40018.00",
+    "abril": "25961.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 247,
+  "fields": {
+    "proyecto": 17,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "7146.00",
+    "mayo": "20960.00",
+    "junio": "35931.00",
+    "julio": "54999.00",
+    "agosto": "45211.00",
+    "septiembre": "31754.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 248,
+  "fields": {
+    "proyecto": 17,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "2119.00",
+    "mayo": "5520.00",
+    "junio": "8386.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 249,
+  "fields": {
+    "proyecto": 18,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "36333.00",
+    "febrero": "35339.00",
+    "marzo": "9913.00",
+    "abril": "81653.00",
+    "mayo": "5153.00",
+    "junio": "46561.00",
+    "julio": "84833.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 250,
+  "fields": {
+    "proyecto": 18,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "12051.00",
+    "junio": "44701.00",
+    "julio": "37286.00",
+    "agosto": "56605.00",
+    "septiembre": "64827.00",
+    "octubre": "7289.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 251,
+  "fields": {
+    "proyecto": 18,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "1610.00",
+    "junio": "3335.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 252,
+  "fields": {
+    "proyecto": 19,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "17063.00",
+    "febrero": "129331.00",
+    "marzo": "96093.00",
+    "abril": "4223.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 253,
+  "fields": {
+    "proyecto": 19,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "15169.00",
+    "febrero": "34665.00",
+    "marzo": "37896.00",
+    "abril": "62328.00",
+    "mayo": "54539.00",
+    "junio": "36925.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 254,
+  "fields": {
+    "proyecto": 19,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "9017.00",
+    "febrero": "14765.00",
+    "marzo": "16115.00",
+    "abril": "9125.00",
+    "mayo": "53751.00",
+    "junio": "84103.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 255,
+  "fields": {
+    "proyecto": 20,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "43.82",
+    "febrero": "97.39",
+    "marzo": "93.49",
+    "abril": "62.67",
+    "mayo": "36.21",
+    "junio": "63.76",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 256,
+  "fields": {
+    "proyecto": 20,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "3538.00",
+    "marzo": "19616.00",
+    "abril": "27595.00",
+    "mayo": "47735.00",
+    "junio": "52672.00",
+    "julio": "58757.00",
+    "agosto": "77237.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 257,
+  "fields": {
+    "proyecto": 20,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "55.00",
+    "marzo": "0.00",
+    "abril": "8373.00",
+    "mayo": "932.00",
+    "junio": "2221.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 258,
+  "fields": {
+    "proyecto": 21,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 259,
+  "fields": {
+    "proyecto": 21,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 260,
+  "fields": {
+    "proyecto": 22,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "148942.00",
+    "febrero": "11792.00",
+    "marzo": "5444.00",
+    "abril": "7195.00",
+    "mayo": "7704.00",
+    "junio": "20206.00",
+    "julio": "77554.00",
+    "agosto": "138194.00",
+    "septiembre": "138194.00",
+    "octubre": "138194.00",
+    "noviembre": "138194.00",
+    "diciembre": "61247.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 261,
+  "fields": {
+    "proyecto": 22,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "6252.00",
+    "marzo": "133219.00",
+    "abril": "53932.00",
+    "mayo": "105071.00",
+    "junio": "57970.00",
+    "julio": "38326.12",
+    "agosto": "87004.59",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 262,
+  "fields": {
+    "proyecto": 22,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "6252.00",
+    "marzo": "133219.00",
+    "abril": "53932.00",
+    "mayo": "105071.00",
+    "junio": "57970.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 263,
+  "fields": {
+    "proyecto": 23,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "50.00",
+    "septiembre": "50.00",
+    "octubre": "150.00",
+    "noviembre": "150.00",
+    "diciembre": "200.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 264,
+  "fields": {
+    "proyecto": 23,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "5165.00",
+    "septiembre": "27850.00",
+    "octubre": "56001.00",
+    "noviembre": "74777.00",
+    "diciembre": "100641.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 265,
+  "fields": {
+    "proyecto": 23,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "932.00",
+    "junio": "2066.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 266,
+  "fields": {
+    "proyecto": 24,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "15978.00",
+    "febrero": "15978.00",
+    "marzo": "15978.00",
+    "abril": "15978.00",
+    "mayo": "15978.00",
+    "junio": "15978.00",
+    "julio": "50000.00",
+    "agosto": "50000.00",
+    "septiembre": "50000.00",
+    "octubre": "250000.00",
+    "noviembre": "300000.00",
+    "diciembre": "804132.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 267,
+  "fields": {
+    "proyecto": 24,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "11598.00",
+    "febrero": "1008.00",
+    "marzo": "0.00",
+    "abril": "552.00",
+    "mayo": "14155.00",
+    "junio": "14652.00",
+    "julio": "79651.00",
+    "agosto": "145680.00",
+    "septiembre": "174427.00",
+    "octubre": "40274.00",
+    "noviembre": "28181.00",
+    "diciembre": "28705.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 268,
+  "fields": {
+    "proyecto": 24,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "11598.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "276.00",
+    "mayo": "13796.00",
+    "junio": "14652.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 269,
+  "fields": {
+    "proyecto": 25,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "1991398.00",
+    "febrero": "1749671.00",
+    "marzo": "1923591.00",
+    "abril": "1698658.00",
+    "mayo": "1555399.00",
+    "junio": "1734594.00",
+    "julio": "106479.00",
+    "agosto": "106479.00",
+    "septiembre": "1121731.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 270,
+  "fields": {
+    "proyecto": 25,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 271,
+  "fields": {
+    "proyecto": 25,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "59191.00",
+    "marzo": "50840.00",
+    "abril": "431329.00",
+    "mayo": "559507.00",
+    "junio": "1139238.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 272,
+  "fields": {
+    "proyecto": 26,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "9505.00",
+    "junio": "9505.00",
+    "julio": "9505.00",
+    "agosto": "9505.00",
+    "septiembre": "15248.00",
+    "octubre": "15248.00",
+    "noviembre": "15248.00",
+    "diciembre": "16236.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 273,
+  "fields": {
+    "proyecto": 26,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 274,
+  "fields": {
+    "proyecto": 26,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 275,
+  "fields": {
+    "proyecto": 27,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "50.00",
+    "noviembre": "94.51",
+    "diciembre": "55.49"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 276,
+  "fields": {
+    "proyecto": 27,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 277,
+  "fields": {
+    "proyecto": 27,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "932.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 278,
+  "fields": {
+    "proyecto": 28,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "100692.00",
+    "octubre": "66436.00",
+    "noviembre": "66436.00",
+    "diciembre": "66436.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 279,
+  "fields": {
+    "proyecto": 28,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 280,
+  "fields": {
+    "proyecto": 28,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 281,
+  "fields": {
+    "proyecto": 29,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "22.21",
+    "febrero": "179.87",
+    "marzo": "180.88",
+    "abril": "221.81",
+    "mayo": "221.81",
+    "junio": "320.60",
+    "julio": "395.97",
+    "agosto": "355.58",
+    "septiembre": "68.13",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 282,
+  "fields": {
+    "proyecto": 29,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "356128.00",
+    "agosto": "269518.00",
+    "septiembre": "164349.00",
+    "octubre": "150926.00",
+    "noviembre": "128549.00",
+    "diciembre": "232937.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 283,
+  "fields": {
+    "proyecto": 29,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "3219.00",
+    "junio": "6671.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 284,
+  "fields": {
+    "proyecto": 30,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "21636.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 285,
+  "fields": {
+    "proyecto": 30,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 286,
+  "fields": {
+    "proyecto": 30,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 287,
+  "fields": {
+    "proyecto": 31,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "4273.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 288,
+  "fields": {
+    "proyecto": 31,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 289,
+  "fields": {
+    "proyecto": 31,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 290,
+  "fields": {
+    "proyecto": 32,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "31818.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 291,
+  "fields": {
+    "proyecto": 32,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 292,
+  "fields": {
+    "proyecto": 32,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 293,
+  "fields": {
+    "proyecto": 33,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 294,
+  "fields": {
+    "proyecto": 33,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 295,
+  "fields": {
+    "proyecto": 34,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "3364.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 296,
+  "fields": {
+    "proyecto": 34,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 297,
+  "fields": {
+    "proyecto": 34,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 298,
+  "fields": {
+    "proyecto": 35,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "2444.00",
+    "septiembre": "9309.00",
+    "octubre": "34909.00",
+    "noviembre": "41251.00",
+    "diciembre": "53120.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 299,
+  "fields": {
+    "proyecto": 35,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 300,
+  "fields": {
+    "proyecto": 35,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 301,
+  "fields": {
+    "proyecto": 36,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "4036.00",
+    "octubre": "8291.00",
+    "noviembre": "53836.00",
+    "diciembre": "83837.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 302,
+  "fields": {
+    "proyecto": 36,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 303,
+  "fields": {
+    "proyecto": 36,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 304,
+  "fields": {
+    "proyecto": 37,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "77778.00",
+    "noviembre": "111111.00",
+    "diciembre": "127778.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 305,
+  "fields": {
+    "proyecto": 37,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 306,
+  "fields": {
+    "proyecto": 37,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 307,
+  "fields": {
+    "proyecto": 38,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "13377.00",
+    "mayo": "10417.00",
+    "junio": "80024.00",
+    "julio": "97544.00",
+    "agosto": "121219.00",
+    "septiembre": "167861.00",
+    "octubre": "163599.00",
+    "noviembre": "175910.00",
+    "diciembre": "46049.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 308,
+  "fields": {
+    "proyecto": 38,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 309,
+  "fields": {
+    "proyecto": 38,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 310,
+  "fields": {
+    "proyecto": 39,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "4582.00",
+    "septiembre": "17455.00",
+    "octubre": "65455.00",
+    "noviembre": "77345.00",
+    "diciembre": "99600.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 311,
+  "fields": {
+    "proyecto": 39,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 312,
+  "fields": {
+    "proyecto": 39,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 313,
+  "fields": {
+    "proyecto": 40,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 314,
+  "fields": {
+    "proyecto": 40,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 315,
+  "fields": {
+    "proyecto": 41,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "3871.00",
+    "octubre": "2439.00",
+    "noviembre": "2122.00",
+    "diciembre": "8379.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 316,
+  "fields": {
+    "proyecto": 41,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 317,
+  "fields": {
+    "proyecto": 41,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 318,
+  "fields": {
+    "proyecto": 42,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "7331.00",
+    "diciembre": "48618.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 319,
+  "fields": {
+    "proyecto": 42,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 320,
+  "fields": {
+    "proyecto": 42,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 321,
+  "fields": {
+    "proyecto": 43,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "3818.00",
+    "septiembre": "14545.00",
+    "octubre": "54545.00",
+    "noviembre": "64456.00",
+    "diciembre": "83000.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 322,
+  "fields": {
+    "proyecto": 43,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 323,
+  "fields": {
+    "proyecto": 43,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 324,
+  "fields": {
+    "proyecto": 44,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "3055.00",
+    "septiembre": "11636.00",
+    "octubre": "43636.00",
+    "noviembre": "51564.00",
+    "diciembre": "66400.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 325,
+  "fields": {
+    "proyecto": 44,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 326,
+  "fields": {
+    "proyecto": 44,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 327,
+  "fields": {
+    "proyecto": 45,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "160.27",
+    "febrero": "145.70",
+    "marzo": "228.49",
+    "abril": "272.09",
+    "mayo": "211.88",
+    "junio": "219.76",
+    "julio": "256.06",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 328,
+  "fields": {
+    "proyecto": 45,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "36774.00",
+    "agosto": "326018.00",
+    "septiembre": "310979.00",
+    "octubre": "158697.00",
+    "noviembre": "137997.00",
+    "diciembre": "131496.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 329,
+  "fields": {
+    "proyecto": 45,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "1610.00",
+    "junio": "3524.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 330,
+  "fields": {
+    "proyecto": 46,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 331,
+  "fields": {
+    "proyecto": 46,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 332,
+  "fields": {
+    "proyecto": 46,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 333,
+  "fields": {
+    "proyecto": 47,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "9316.00",
+    "noviembre": "37484.00",
+    "diciembre": "53200.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 334,
+  "fields": {
+    "proyecto": 47,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 335,
+  "fields": {
+    "proyecto": 47,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 336,
+  "fields": {
+    "proyecto": 48,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "22273.00",
+    "noviembre": "25455.00",
+    "diciembre": "29272.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 337,
+  "fields": {
+    "proyecto": 48,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 338,
+  "fields": {
+    "proyecto": 48,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 339,
+  "fields": {
+    "proyecto": 49,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "66288.00",
+    "abril": "128995.00",
+    "mayo": "179937.00",
+    "junio": "187304.00",
+    "julio": "27454.00",
+    "agosto": "1055.00",
+    "septiembre": "11372.00",
+    "octubre": "14856.00",
+    "noviembre": "6779.00",
+    "diciembre": "63509.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 340,
+  "fields": {
+    "proyecto": 49,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "8645.00",
+    "julio": "14102.00",
+    "agosto": "97930.00",
+    "septiembre": "90759.00",
+    "octubre": "133235.00",
+    "noviembre": "185216.00",
+    "diciembre": "61651.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 341,
+  "fields": {
+    "proyecto": 49,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "3304.00",
+    "junio": "3357.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 342,
+  "fields": {
+    "proyecto": 50,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 343,
+  "fields": {
+    "proyecto": 50,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 344,
+  "fields": {
+    "proyecto": 50,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 345,
+  "fields": {
+    "proyecto": 51,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "495000.00",
+    "mayo": "150000.00",
+    "junio": "150000.00",
+    "julio": "150000.00",
+    "agosto": "150000.00",
+    "septiembre": "150000.00",
+    "octubre": "150000.00",
+    "noviembre": "150000.00",
+    "diciembre": "321273.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 346,
+  "fields": {
+    "proyecto": 51,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "1186.04",
+    "junio": "2432.77",
+    "julio": "2055.53",
+    "agosto": "5917.90",
+    "septiembre": "16038.73",
+    "octubre": "22523.11",
+    "noviembre": "59830.41",
+    "diciembre": "320911.79"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 347,
+  "fields": {
+    "proyecto": 51,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "1186.00",
+    "junio": "2433.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 348,
+  "fields": {
+    "proyecto": 52,
+    "tipo": "PROG.",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 349,
+  "fields": {
+    "proyecto": 52,
+    "tipo": "PROG.P6",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+},
+{
+  "model": "proyectos.flujocaja",
+  "pk": 350,
+  "fields": {
+    "proyecto": 52,
+    "tipo": "REAL",
+    "anio": 2025,
+    "enero": "0.00",
+    "febrero": "0.00",
+    "marzo": "0.00",
+    "abril": "0.00",
+    "mayo": "0.00",
+    "junio": "0.00",
+    "julio": "0.00",
+    "agosto": "0.00",
+    "septiembre": "0.00",
+    "octubre": "0.00",
+    "noviembre": "0.00",
+    "diciembre": "0.00"
+  }
+}
+]

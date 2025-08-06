@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Lista de Proyectos</h2>
+
+<table>
+    <tr>
+        <th>N°</th>
+        <th>Código</th>
+        <th>EPI/API</th>
+        <th>Área</th>
+        <th>Nombre del Proyecto</th>
+        <th>Estado</th>
+        <th>Ppto Total</th>
+        <th>GAF 2025</th>
+        <th>Identificado</th>
+        <th>Proyectado P6</th>
+        <th>Ejecutado</th>
+    </tr>
+    {% for proyecto in proyectos %}
+    <tr>
+        <td>{{ proyecto.numero }}</td>
+        <td>{{ proyecto.codigo }}</td>
+        <td>{{ proyecto.tipo_epi_api }}</td>
+        <td>{{ proyecto.area }}</td>
+        <td>{{ proyecto.nombre }}</td>
+        <td>{{ proyecto.estado }}</td>
+        <td>{{ proyecto.ppto_total }}</td>
+        <td>{{ proyecto.ppto_gaf_2025 }}</td>
+        <td>{{ proyecto.identificado_2025 }}</td>
+        <td>{{ proyecto.proyectado_p6_2025 }}</td>
+        <td>{{ proyecto.ejecutado }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

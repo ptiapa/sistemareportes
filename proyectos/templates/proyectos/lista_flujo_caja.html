@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Flujo de Caja de Proyectos</h2>
+
+<!-- 🔍 Filtro por año + exportación -->
+<form method="get" style="margin-bottom: 20px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+
+    <label for="anio">Año:</label>
+    <select name="anio" id="anio">
+        <option value="">-- Todos --</option>
+        {% for a in años_disponibles %}
+            <option value="{{ a }}" {% if anio == a %}selected{% endif %}>{{ a }}</option>
+        {% endfor %}
+    </select>
+
+    <br><br>
+
+    <!-- Dropdown con checkboxes -->
+    <div class="dropdown-checkbox">
+        <button type="button" class="dropdown-btn">Filtrar por estado</button>
+        <div class="dropdown-content">
+            {% for e in estados_disponibles %}
+                <label>
+                    <input type="checkbox" name="estado" value="{{ e }}" {% if e in estados_seleccionados %}checked{% endif %}>
+                    {{ e }}
+                </label><br>
+            {% endfor %}
+        </div>
+    </div>
+
+    <br>
+    <button type="submit">Aplicar filtros</button>
+    <button type="submit" name="exportar" value="1">Exportar a Excel</button>
+</form>
+
+
+
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Nombre Proyecto</th>
+            <th>Tipo</th>
+            <th>Enero</th>
+            <th>Febrero</th>
+            <th>Marzo</th>
+            <th>Abril</th>
+            <th>Mayo</th>
+            <th>Junio</th>
+            <th>Julio</th>
+            <th>Agosto</th>
+            <th>Septiembre</th>
+            <th>Octubre</th>
+            <th>Noviembre</th>
+            <th>Diciembre</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in proyectos_flujo %}
+            {% for flujo in item.flujos %}
+                <tr>
+                    {% if forloop.first %}
+                        <td rowspan="{{ item.flujos|length }}">{{ item.proyecto.codigo }}</td>
+                        <td rowspan="{{ item.flujos|length }}">{{ item.proyecto.nombre }}</td>
+                    {% endif %}
+                    <td>{{ flujo.tipo }}</td>
+                    <td>{{ flujo.enero }}</td>
+                    <td>{{ flujo.febrero }}</td>
+                    <td>{{ flujo.marzo }}</td>
+                    <td>{{ flujo.abril }}</td>
+                    <td>{{ flujo.mayo }}</td>
+                    <td>{{ flujo.junio }}</td>
+                    <td>{{ flujo.julio }}</td>
+                    <td>{{ flujo.agosto }}</td>
+                    <td>{{ flujo.septiembre }}</td>
+                    <td>{{ flujo.octubre }}</td>
+                    <td>{{ flujo.noviembre }}</td>
+                    <td>{{ flujo.diciembre }}</td>
+                    <td>{{ flujo.total }}</td>
+                    <td><button class="btn-editar" data-id="{{ flujo.id }}">Editar</button></td>
+                </tr>
+
+            {% endfor %}
+        {% endfor %}
+    </tbody>
+</table>
+
+<div id="modalFlujo" style="display:none; position:fixed; top:10%; left:20%; background:#fff; padding:20px; border:1px solid #ccc; z-index:1000; max-width: 600px;">
+    <span id="cerrarModal" style="cursor:pointer; float:right;">❌</span>
+    <div id="modalContent"></div>
+</div>
+
+<script>
+document.querySelectorAll(".btn-editar").forEach(btn => {
+    btn.addEventListener("click", function () {
+        const id = this.dataset.id;
+        fetch(`/proyectos/flujo/editar/${id}/`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("modalContent").innerHTML = data.html;
+                document.getElementById("modalFlujo").style.display = "block";
+
+                const form = document.getElementById("form-flujo");
+                form.addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    fetch(`/proyectos/flujo/editar/${id}/`, {
+                        method: 'POST',
+                        headers: {
+                            'X-CSRFToken': form.querySelector('[name=csrfmiddlewaretoken]').value
+                        },
+                        body: new FormData(form)
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            location.reload();
+                        } else {
+                            document.getElementById("modalContent").innerHTML = data.html;
+                        }
+                    });
+                });
+            });
+    });
+});
+
+document.getElementById("cerrarModal").onclick = () => {
+    document.getElementById("modalFlujo").style.display = "none";
+};
+</script>
+{% endblock %}

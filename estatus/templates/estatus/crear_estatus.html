@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="max-width: 700px; margin: 0 auto; padding: 20px;">
+    <h2 style="text-align: center;">➕ Agregar nuevo estatus semanal</h2>
+    
+    <form method="post" style="margin-top: 20px;">
+        {% csrf_token %}
+        <table style="width: 100%; border-collapse: collapse;">
+            {% for field in form %}
+            <tr style="margin-bottom: 10px;">
+                <td style="padding: 8px; vertical-align: top;"><strong>{{ field.label_tag }}</strong></td>
+                <td style="padding: 8px;">{{ field }}</td>
+            </tr>
+            {% if field.errors %}
+            <tr>
+                <td colspan="2" style="color: red;">{{ field.errors }}</td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+        </table>
+
+        <div style="text-align: right; margin-top: 20px;">
+            <button type="submit" style="padding: 10px 20px; background-color: #2d6a4f; color: white; border: none; border-radius: 5px;">
+                Guardar
+            </button>
+        </div>
+    </form>
+
+    <div style="margin-top: 20px;">
+        <a href="{% url 'lista_estatus' %}">⬅ Volver al listado</a>
+    </div>
+</div>
+{% endblock %}

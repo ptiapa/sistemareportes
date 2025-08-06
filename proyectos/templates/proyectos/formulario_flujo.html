@@ -1,0 +1,5 @@
+<form method="post" id="form-flujo">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">💾 Guardar</button>
+</form>
