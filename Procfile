@@ -1,1 +1,1 @@
-web: gunicorn sistemareportes.wsgi:application
+web: gunicorn sistemareportes.wsgi
