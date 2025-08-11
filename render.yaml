@@ -1,0 +1,21 @@
+# render.yaml — configuración para Render.com
+services:
+  - type: web
+    name: sistemareportes
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput
+    startCommand: gunicorn sistemareportes.wsgi:application
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.4
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: False
+    databases:
+      - name: sr-postgres
+
+databases:
+  - name: sr-postgres
+    plan: free

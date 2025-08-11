@@ -56,3 +56,7 @@ tzdata==2025.1
 urllib3==2.3.0
 wcwidth==0.2.13
 whitenoise==6.8.2
+psycopg2-binary==2.9.10
+dj-database-url==2.3.0
+whitenoise==6.8.2
+python-decouple==3.8
