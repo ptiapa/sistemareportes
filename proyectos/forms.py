@@ -24,3 +24,17 @@ class FlujoCajaForm(forms.ModelForm):
             'noviembre': forms.NumberInput(attrs={'class': 'form-control', 'step': '0.01'}),
             'diciembre': forms.NumberInput(attrs={'class': 'form-control', 'step': '0.01'}),
         }
+
+class ExcelUploadForm(forms.Form):
+    archivo = forms.FileField(help_text="Sube un .xlsx")
+    hoja = forms.CharField(required=False, help_text="Nombre de la hoja (opcional).")
+
+class EditarCodigoForm(forms.Form):
+    codigo_actual = forms.CharField(disabled=True, label="Código actual")
+    nuevo_codigo = forms.CharField(label="Nuevo código")
+
+    def clean_nuevo_codigo(self):
+        v = self.cleaned_data["nuevo_codigo"].strip()
+        if not v:
+            raise forms.ValidationError("El nuevo código no puede estar vacío.")
+        return v

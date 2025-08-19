@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Importar Proyectos</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 16px; }
+    .wrap { max-width: 640px; margin: 0 auto; }
+    .card { border: 1px solid #ddd; border-radius: 8px; padding: 16px; }
+    .messages { margin-bottom: 12px; }
+    .messages .success { color: #0a7a0a; }
+    .messages .error, .messages .warning { color: #a00; }
+    label { display:block; margin: 8px 0 4px; }
+    input[type=file], input[type=text] { width:100%; }
+    button, a.btn { padding:8px 12px; display:inline-block; margin-top: 8px; text-decoration: none; border: 1px solid #888; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h2>Importar Proyectos desde Excel</h2>
+
+    {% if messages %}
+      <div class="messages">
+        {% for m in messages %}
+          <div class="{{ m.tags }}">{{ m }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <div class="card">
+      <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label>Archivo (.xlsx)</label>
+        {{ form.archivo }}
+        <label>Hoja (opcional)</label>
+        {{ form.hoja }}
+        <div>
+          <button type="submit">Subir e importar</button>
+          <a class="btn" href="{% url 'proyectos_lista' %}">Volver</a>
+        </div>
+      </form>
+      <p style="margin-top:12px; font-size:13px;">
+        Encabezados válidos (ejemplos): <code>codigo</code>, <code>nombre</code>, <code>estado</code>,
+        <code>ppto total</code>, <code>ppto gaf 2025</code>, <code>identificado 2025</code>, <code>ejecutado</code>.<br>
+        Se aceptan variantes comunes (mayúsculas, tildes).
+      </p>
+    </div>
+  </div>
+</body>
+</html>

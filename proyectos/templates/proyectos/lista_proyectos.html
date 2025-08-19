@@ -3,6 +3,11 @@
 {% block content %}
 <h2>Lista de Proyectos</h2>
 
+<div style="margin-bottom:12px;">
+  <a class="btn" href="{% url 'proyectos_importar' %}">📥 Importar Excel</a>
+</div>
+
+
 <table>
     <tr>
         <th>N°</th>
@@ -30,6 +35,8 @@
         <td>{{ proyecto.identificado_2025 }}</td>
         <td>{{ proyecto.proyectado_p6_2025 }}</td>
         <td>{{ proyecto.ejecutado }}</td>
+        <a href="{% url 'editar_proyecto_codigo' proyecto.id %}">✏️ Editar código</a>
+
     </tr>
     {% endfor %}
 </table>
