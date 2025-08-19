@@ -7,11 +7,16 @@ from django.http import JsonResponse
 from .forms import FlujoCajaForm, ExcelUploadForm, EditarCodigoForm  
 
 import pandas as pd
+import io
+from decimal import Decimal, InvalidOperation
 
 from django.views.decorators.http import require_http_methods
 from django.contrib import messages
 from django.db import transaction
 from django.urls import reverse
+
+from .forms import ExcelUploadForm, EditarCodigoForm
+
 
 def lista_proyectos(request):
     proyectos = Proyecto.objects.all()
