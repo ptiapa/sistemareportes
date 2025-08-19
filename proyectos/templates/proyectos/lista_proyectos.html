@@ -35,7 +35,8 @@
         <td>{{ proyecto.identificado_2025 }}</td>
         <td>{{ proyecto.proyectado_p6_2025 }}</td>
         <td>{{ proyecto.ejecutado }}</td>
-        <a href="{% url 'editar_proyecto_codigo' proyecto.id %}">✏️ Editar código</a>
+        <td><a href="{% url 'editar_proyecto_codigo' proyecto.id %}">✏️ Editar código</a></td>
+        
 
     </tr>
     {% endfor %}
