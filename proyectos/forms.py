@@ -38,3 +38,7 @@ class EditarCodigoForm(forms.Form):
         if not v:
             raise forms.ValidationError("El nuevo código no puede estar vacío.")
         return v
+
+# Alias para mantener compatibilidad con la vista que importa ImportarExcelForm
+class ImportarExcelForm(ExcelUploadForm):
+    pass
