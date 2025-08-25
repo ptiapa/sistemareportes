@@ -187,20 +187,29 @@ def importar_proyectos(request):
     return redirect(reverse("lista_proyectos"))
 
 # ===== Vista: editar código manual =====
+@require_http_methods(["GET", "POST"])
 def editar_proyecto_codigo(request, proyecto_id):
     proyecto = get_object_or_404(Proyecto, id=proyecto_id)
 
     if request.method == "POST":
-        form = EditarCodigoForm(request.POST, initial={"codigo_actual": proyecto.codigo})
+        form = EditarCodigoForm(request.POST)
         if form.is_valid():
-            nuevo = form.cleaned_data["nuevo_codigo"]
-            proyecto.codigo = nuevo
-            proyecto.save()
-            messages.success(request, f"Código actualizado a {nuevo}")
-            return redirect(reverse("lista_proyectos"))
+            nuevo = form.cleaned_data["nuevo_codigo"].strip()
+            if not nuevo:
+                form.add_error("nuevo_codigo", "El nuevo código no puede estar vacío.")
+            else:
+                try:
+                    with transaction.atomic():
+                        proyecto.codigo = nuevo
+                        proyecto.save()  # unique=True puede lanzar IntegrityError
+                    messages.success(request, "Código actualizado correctamente.")
+                    return redirect("lista_proyectos")  # debe existir en tus urls
+                except IntegrityError:
+                    form.add_error("nuevo_codigo", "Ya existe un proyecto con ese código. Elige otro.")
+                    messages.error(request, "Ese código ya está en uso.")
     else:
         form = EditarCodigoForm(initial={"codigo_actual": proyecto.codigo})
 
-    return render(request,"proyectos/editar_codigo.html",{"form":form,"proyecto":proyecto})
+    return render(request, "proyectos/editar_codigo.html", {"form": form, "proyecto": proyecto})
 
 
