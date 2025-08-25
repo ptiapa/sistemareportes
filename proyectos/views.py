@@ -189,24 +189,26 @@ def importar_proyectos(request):
 # ===== Vista: editar código manual =====
 @require_http_methods(["GET", "POST"])
 def editar_proyecto_codigo(request, proyecto_id):
-    proyecto = get_object_or_404(Proyecto, id=proyecto_id)
+    proyecto = get_object_or_404(Proyecto, pk=proyecto_id)
 
     if request.method == "POST":
         form = EditarCodigoForm(request.POST)
         if form.is_valid():
             nuevo = form.cleaned_data["nuevo_codigo"].strip()
-            if not nuevo:
-                form.add_error("nuevo_codigo", "El nuevo código no puede estar vacío.")
+
+            # Evita duplicados por el unique=True del modelo
+            if Proyecto.objects.exclude(pk=proyecto.pk).filter(codigo=nuevo).exists():
+                form.add_error("nuevo_codigo", "Este código ya existe en otro proyecto.")
             else:
                 try:
                     with transaction.atomic():
                         proyecto.codigo = nuevo
-                        proyecto.save()  # unique=True puede lanzar IntegrityError
+                        proyecto.save(update_fields=["codigo"])
                     messages.success(request, "Código actualizado correctamente.")
-                    return redirect("lista_proyectos")  # debe existir en tus urls
+                    return redirect("lista_proyectos")
                 except IntegrityError:
-                    form.add_error("nuevo_codigo", "Ya existe un proyecto con ese código. Elige otro.")
-                    messages.error(request, "Ese código ya está en uso.")
+                    form.add_error("nuevo_codigo", "No se pudo actualizar el código (constraint de base de datos).")
+        # Si el form no es válido, cae al render con errores
     else:
         form = EditarCodigoForm(initial={"codigo_actual": proyecto.codigo})
 
