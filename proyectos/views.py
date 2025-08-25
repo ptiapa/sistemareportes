@@ -12,7 +12,7 @@ from decimal import Decimal, InvalidOperation
 
 from django.views.decorators.http import require_http_methods
 from django.contrib import messages
-from django.db import transaction
+from django.db import transaction, IntegrityError
 from django.urls import reverse
 
 from .forms import ExcelUploadForm, EditarCodigoForm
@@ -184,7 +184,7 @@ def importar_proyectos(request):
             else: actualizados+=1
 
     messages.success(request, f"Importación: {creados} creados, {actualizados} actualizados.")
-    return redirect(reverse("proyectos_lista"))
+    return redirect(reverse("lista_proyectos"))
 
 # ===== Vista: editar código manual =====
 def editar_proyecto_codigo(request, proyecto_id):
@@ -197,7 +197,7 @@ def editar_proyecto_codigo(request, proyecto_id):
             proyecto.codigo = nuevo
             proyecto.save()
             messages.success(request, f"Código actualizado a {nuevo}")
-            return redirect(reverse("proyectos_lista"))
+            return redirect(reverse("lista_proyectos"))
     else:
         form = EditarCodigoForm(initial={"codigo_actual": proyecto.codigo})
 
