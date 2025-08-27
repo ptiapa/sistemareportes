@@ -28,6 +28,11 @@
     {% endif %}
 
     <div class="card">
+      {% if form.non_field_errors %}
+        <div class="messages">
+          <div class="error">{{ form.non_field_errors }}</div>
+        </div>
+      {% endif %}
       <form method="post">
         {% csrf_token %}
         {{ form.as_p }}

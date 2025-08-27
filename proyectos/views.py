@@ -187,6 +187,7 @@ def importar_proyectos(request):
     return redirect(reverse("lista_proyectos"))
 
 # ===== Vista: editar código manual =====
+
 @require_http_methods(["GET", "POST"])
 def editar_proyecto_codigo(request, proyecto_id):
     proyecto = get_object_or_404(Proyecto, pk=proyecto_id)
@@ -196,22 +197,23 @@ def editar_proyecto_codigo(request, proyecto_id):
         if form.is_valid():
             nuevo = form.cleaned_data["nuevo_codigo"].strip()
 
-            # Evita duplicados por el unique=True del modelo
-            if Proyecto.objects.exclude(pk=proyecto.pk).filter(codigo=nuevo).exists():
+            # Validaciones básicas
+            if not nuevo:
+                form.add_error("nuevo_codigo", "Ingresa un código válido.")
+            elif Proyecto.objects.exclude(pk=proyecto.pk).filter(codigo__iexact=nuevo).exists():
                 form.add_error("nuevo_codigo", "Este código ya existe en otro proyecto.")
             else:
                 try:
                     with transaction.atomic():
-                        proyecto.codigo = nuevo
-                        proyecto.save(update_fields=["codigo"])
-                    messages.success(request, "Código actualizado correctamente.")
-                    return redirect("lista_proyectos")
+                        # Actualiza de forma directa (evita temas de instancia no refrescada)
+                        Proyecto.objects.filter(pk=proyecto.pk).update(codigo=nuevo)
+                    messages.success(request, f"Código actualizado a {nuevo}.")
+                    return redirect("lista_proyectos")  # <-- nombre correcto
                 except IntegrityError:
-                    form.add_error("nuevo_codigo", "No se pudo actualizar el código (constraint de base de datos).")
-        # Si el form no es válido, cae al render con errores
+                    form.add_error("nuevo_codigo", "No se pudo actualizar (restricción de BD).")
+        # form inválido -> vuelve a mostrar el template con errores (200)
     else:
         form = EditarCodigoForm(initial={"codigo_actual": proyecto.codigo})
 
     return render(request, "proyectos/editar_codigo.html", {"form": form, "proyecto": proyecto})
-
 
