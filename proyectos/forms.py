@@ -30,14 +30,17 @@ class ExcelUploadForm(forms.Form):
     hoja = forms.CharField(required=False, help_text="Nombre de la hoja (opcional).")
 
 class EditarCodigoForm(forms.Form):
-    codigo_actual = forms.CharField(disabled=True, label="Código actual")
-    nuevo_codigo = forms.CharField(label="Nuevo código")
-
-    def clean_nuevo_codigo(self):
-        v = self.cleaned_data["nuevo_codigo"].strip()
-        if not v:
-            raise forms.ValidationError("El nuevo código no puede estar vacío.")
-        return v
+    # No requerido + deshabilitado -> no participa en la validación
+    codigo_actual = forms.CharField(
+        label="Código actual",
+        required=False,
+        disabled=True
+    )
+    nuevo_codigo = forms.CharField(
+        label="Nuevo código",
+        max_length=50,
+        strip=True
+    )
 
 # Alias para mantener compatibilidad con la vista que importa ImportarExcelForm
 class ImportarExcelForm(ExcelUploadForm):

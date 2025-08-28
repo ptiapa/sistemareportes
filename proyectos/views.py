@@ -194,26 +194,22 @@ def editar_proyecto_codigo(request, proyecto_id):
 
     if request.method == "POST":
         form = EditarCodigoForm(request.POST)
+        # Mostrar siempre el código actual en el campo deshabilitado
+        form.fields["codigo_actual"].initial = proyecto.codigo
+
         if form.is_valid():
             nuevo = form.cleaned_data["nuevo_codigo"].strip()
-
-            # Validaciones básicas
             if not nuevo:
                 form.add_error("nuevo_codigo", "Ingresa un código válido.")
             elif Proyecto.objects.exclude(pk=proyecto.pk).filter(codigo__iexact=nuevo).exists():
                 form.add_error("nuevo_codigo", "Este código ya existe en otro proyecto.")
             else:
-                try:
-                    with transaction.atomic():
-                        # Actualiza de forma directa (evita temas de instancia no refrescada)
-                        Proyecto.objects.filter(pk=proyecto.pk).update(codigo=nuevo)
-                    messages.success(request, f"Código actualizado a {nuevo}.")
-                    return redirect("lista_proyectos")  # <-- nombre correcto
-                except IntegrityError:
-                    form.add_error("nuevo_codigo", "No se pudo actualizar (restricción de BD).")
-        # form inválido -> vuelve a mostrar el template con errores (200)
+                Proyecto.objects.filter(pk=proyecto.pk).update(codigo=nuevo)
+                messages.success(request, f"Código actualizado a {nuevo}.")
+                return redirect("lista_proyectos")
     else:
         form = EditarCodigoForm(initial={"codigo_actual": proyecto.codigo})
 
     return render(request, "proyectos/editar_codigo.html", {"form": form, "proyecto": proyecto})
+
 
