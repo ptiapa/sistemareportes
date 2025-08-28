@@ -34,13 +34,41 @@
         </div>
       {% endif %}
       <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <div>
-          <button type="submit">Guardar</button>
-          <a class="btn" href="{% url 'lista_proyectos' %}">Volver</a>
-        </div>
-      </form>
+  {% csrf_token %}
+
+  {% if messages %}
+    <ul>
+      {% for m in messages %}
+        <li class="{{ m.tags }}">{{ m }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if form.non_field_errors %}
+    <ul>
+      {% for e in form.non_field_errors %}
+        <li class="error">{{ e }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  <p><b>Código actual:</b> {{ proyecto.codigo }}</p>
+
+  <p>
+    {{ form.codigo.label_tag }}<br>
+    {{ form.codigo }}
+    {% if form.codigo.errors %}
+      <br>
+      <small class="error">
+        {% for e in form.codigo.errors %}{{ e }}{% if not forloop.last %}<br>{% endif %}{% endfor %}
+      </small>
+    {% endif %}
+  </p>
+
+  <button type="submit">Guardar</button>
+  <a href="{% url 'proyectos_lista' %}">Volver</a>
+</form>
+
     </div>
   </div>
 </body>

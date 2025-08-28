@@ -18,9 +18,6 @@ from django.urls import reverse
 import traceback
 from unicodedata import normalize
 
-from .forms import CodigoProyectoForm
-
-
 def lista_proyectos(request):
     proyectos = Proyecto.objects.all()
     return render(request, 'proyectos/lista_proyectos.html', {'proyectos': proyectos})

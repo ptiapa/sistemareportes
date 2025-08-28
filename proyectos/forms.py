@@ -1,5 +1,5 @@
 from django import forms
-from .models import FlujoCaja
+from .models import FlujoCaja, Proyecto
 
 class FlujoCajaForm(forms.ModelForm):
     class Meta:
@@ -26,21 +26,29 @@ class FlujoCajaForm(forms.ModelForm):
         }
 
 class ExcelUploadForm(forms.Form):
-    archivo = forms.FileField(help_text="Sube un .xlsx")
-    hoja = forms.CharField(required=False, help_text="Nombre de la hoja (opcional).")
+    archivo = forms.FileField(label="Archivo (.xlsx)")
+    hoja = forms.CharField(label="Hoja (opcional)", required=False)
 
 class EditarCodigoForm(forms.Form):
-    # No requerido + deshabilitado -> no participa en la validación
-    codigo_actual = forms.CharField(
-        label="Código actual",
-        required=False,
-        disabled=True
-    )
-    nuevo_codigo = forms.CharField(
-        label="Nuevo código",
-        max_length=50,
-        strip=True
-    )
+    codigo_actual = forms.CharField(disabled=True, required=False, label="Código actual")
+    nuevo_codigo = forms.CharField(label="Nuevo código")
+
+    def __init__(self, *args, **kwargs):
+        self.proyecto = kwargs.pop("proyecto", None)
+        super().__init__(*args, **kwargs)
+
+def clean_nuevo_codigo(self):
+        val = self.cleaned_data["nuevo_codigo"].strip()
+        if not val:
+            raise forms.ValidationError("El código no puede estar vacío.")
+        # Evitar duplicados (el modelo tiene unique=True)
+        qs = Proyecto.objects.filter(codigo=val)
+        if self.proyecto:
+            qs = qs.exclude(pk=self.proyecto.pk)
+        if qs.exists():
+            raise forms.ValidationError("Ya existe un proyecto con ese código.")
+        return val
+
 
 # Alias para mantener compatibilidad con la vista que importa ImportarExcelForm
 class ImportarExcelForm(ExcelUploadForm):
