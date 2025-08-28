@@ -275,5 +275,23 @@ def importar_proyectos(request):
     messages.success(request, f"Importación OK: {creados} creados, {actualizados} actualizados.")
     return redirect("proyectos_lista")
 
+@require_http_methods(["GET", "POST"])
+def editar_proyecto_codigo(request, pk):
+    proyecto = get_object_or_404(Proyecto, pk=pk)
 
+    if request.method == "POST":
+        form = CodigoProyectoForm(request.POST, instance=proyecto)
+        if form.is_valid():
+            proyecto = form.save()
+            messages.success(request, f"Código actualizado a {proyecto.codigo}")
+            return redirect("proyectos_lista")
+        else:
+            messages.error(request, "Corrige los errores del formulario.")
+    else:
+        form = CodigoProyectoForm(instance=proyecto)
+
+    return render(request, "proyectos/editar_codigo.html", {
+        "form": form,
+        "proyecto": proyecto,
+    })
 
