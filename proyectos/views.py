@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from django.template.loader import render_to_string
 from django.http import JsonResponse
 
-from .forms import FlujoCajaForm, ExcelUploadForm, EditarCodigoForm  
+from .forms import FlujoCajaForm, ExcelUploadForm, EditarCodigoForm, ImportarExcelForm  
 
 import pandas as pd
 import io
@@ -15,9 +15,10 @@ from django.contrib import messages
 from django.db import transaction, IntegrityError
 from django.urls import reverse
 
-from .forms import ExcelUploadForm, EditarCodigoForm
 import traceback
 from unicodedata import normalize
+
+from .forms import CodigoProyectoForm
 
 
 def lista_proyectos(request):
@@ -168,10 +169,6 @@ def _to_int(val):
     except Exception:
         return None
 
-
-
-
-
 # ===== Vista: importar Excel =====
 @require_http_methods(["GET", "POST"])
 def importar_proyectos(request):
@@ -280,18 +277,29 @@ def editar_proyecto_codigo(request, pk):
     proyecto = get_object_or_404(Proyecto, pk=pk)
 
     if request.method == "POST":
-        form = CodigoProyectoForm(request.POST, instance=proyecto)
+        form = EditarCodigoForm(request.POST, proyecto=proyecto)
         if form.is_valid():
-            proyecto = form.save()
-            messages.success(request, f"Código actualizado a {proyecto.codigo}")
+            nuevo = form.cleaned_data["nuevo_codigo"].strip()
+            if nuevo != proyecto.codigo:
+                proyecto.codigo = nuevo
+                proyecto.save(update_fields=["codigo"])
+                messages.success(request, "✅ Código actualizado.")
+            else:
+                messages.info(request, "No hubo cambios.")
             return redirect("proyectos_lista")
         else:
-            messages.error(request, "Corrige los errores del formulario.")
+            messages.error(request, "Revisa el formulario.")
     else:
-        form = CodigoProyectoForm(instance=proyecto)
+        form = EditarCodigoForm(
+            proyecto=proyecto,
+            initial={"codigo_actual": proyecto.codigo, "nuevo_codigo": proyecto.codigo},
+        )
 
-    return render(request, "proyectos/editar_codigo.html", {
-        "form": form,
-        "proyecto": proyecto,
-    })
+    return render(
+        request,
+        "proyectos/editar_codigo.html",
+        {"form": form, "proyecto": proyecto},
+    )
+
+
 
