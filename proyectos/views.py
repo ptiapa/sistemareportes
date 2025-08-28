@@ -16,6 +16,8 @@ from django.db import transaction, IntegrityError
 from django.urls import reverse
 
 from .forms import ExcelUploadForm, EditarCodigoForm
+import traceback
+from unicodedata import normalize
 
 
 def lista_proyectos(request):
@@ -105,111 +107,173 @@ def editar_flujo(request, flujo_id):
 
 # ===== Helpers =====
 MAPEO_COLUMNAS = {
-    "codigo": "codigo", "código": "codigo", "codigoproyecto": "codigo",
-    "código proyecto": "codigo", "cod.proyecto": "codigo",
-    "nombre": "nombre", "proyecto": "nombre",
-    "estado": "estado", "estatus": "estado",
-    "ppto total": "ppto_total", "ppto_total": "ppto_total", "presupuesto total": "ppto_total",
-    "ppto gaf 2025": "ppto_gaf_2025", "presupuesto gaf 2025": "ppto_gaf_2025", "gaf 2025": "ppto_gaf_2025",
-    "identificado 2025": "identificado_2025", "identificado_2025": "identificado_2025",
-    "ejecutado": "ejecutado",
-}
-CAMPOS_ACTUALIZABLES = {"codigo","nombre","estado","ppto_total","ppto_gaf_2025","identificado_2025","ejecutado"}
+    "ficha": "numero",
+    "codigo": "codigo",
+    "codigo proyecto": "codigo",
+    "nombre proyecto": "nombre",
+    "nombre": "nombre",
+    "gerencia": "area",
+    "unidad operativa": None,           # (no existe en el modelo, se ignora)
+    "tipo": "tipo_epi_api",
+    "estado": "estado",
 
-def _normaliza_nombre(col: str) -> str:
+    "presupuesto total": "ppto_total",
+    "ejecutado total": "ejecutado",     # si no quieres pisar, comenta esta línea
+
+    "comprometido total": None,         # (no existe en el modelo)
+    "presupuesto ano": "ppto_gaf_2025",
+    "identificado ano": "identificado_2025",
+    "ejecutado ano": "ejecutado",       # YTD
+
+    "fisico total": None,
+    "financiero total": None,
+    "fisico ano": None,
+    "financiero ano": None,
+    "avance fisico": None,
+}
+
+NUMERIC_FIELDS = {"ppto_total", "ppto_gaf_2025", "identificado_2025", "ejecutado"}
+TEXT_FIELDS    = {"nombre", "estado", "tipo_epi_api", "area"}
+
+def _norm(s: str) -> str:
+    s = (str(s) if s is not None else "").strip().lower()
+    s = s.replace("<br>", " ").replace("\n", " ")
+    # quita acentos: año -> ano, código -> codigo, etc.
+    s = normalize("NFKD", s).encode("ascii", "ignore").decode("ascii")
+    # colapsa espacios
+    return " ".join(s.split())
     return (col or "").strip().lower()
 
 def _to_decimal(val):
-    if val is None or (isinstance(val, float) and pd.isna(val)) or (isinstance(val, str) and not val.strip()):
+    """Convierte '1.234.567,89' o '1,234,567.89' a Decimal; None si vacío."""
+    if val is None or (isinstance(val, float) and pd.isna(val)) or (isinstance(val, str) and val.strip() == ""):
         return None
+    s = str(val).strip().replace(" ", "")
+    if s.count(",") == 1 and s.count(".") > 1:
+        s = s.replace(".", "").replace(",", ".")
+    elif s.count(",") > 1 and s.count(".") == 1:
+        s = s.replace(",", "")
+    elif s.count(",") == 1 and s.count(".") == 0:
+        s = s.replace(",", ".")
     try:
-        if isinstance(val, str):
-            val = val.replace(" ", "").replace(".", "").replace(",", ".")
-        return Decimal(str(val))
+        return Decimal(s)
     except (InvalidOperation, ValueError):
         return None
 
+def _to_int(val):
+    try:
+        if val is None or (isinstance(val, float) and pd.isna(val)) or (isinstance(val, str) and val.strip() == ""):
+            return None
+        return int(str(val).strip())
+    except Exception:
+        return None
+
+
+
+
+
 # ===== Vista: importar Excel =====
-@require_http_methods(["GET","POST"])
+@require_http_methods(["GET", "POST"])
 def importar_proyectos(request):
     if request.method == "GET":
         return render(request, "proyectos/importar.html", {"form": ExcelUploadForm()})
 
     form = ExcelUploadForm(request.POST, request.FILES)
     if not form.is_valid():
+        messages.error(request, f"Formulario inválido: {form.errors}")
         return render(request, "proyectos/importar.html", {"form": form})
 
-    archivo = request.FILES["archivo"]
-    hoja = form.cleaned_data.get("hoja") or None
+    archivo = form.cleaned_data["archivo"]
+    hoja = form.cleaned_data.get("hoja") or 0
 
+    # 1) Leer Excel
+    import io, traceback
     try:
-        df = pd.read_excel(io.BytesIO(archivo.read()), sheet_name=hoja)
+        buffer = archivo.read()
+        df = pd.read_excel(io.BytesIO(buffer), sheet_name=hoja, engine="openpyxl")
     except Exception as e:
-        messages.error(request, f"Error leyendo Excel: {e}")
-        return render(request, "proyectos/importar.html", {"form": form})
+        traceback.print_exc()
+        messages.error(request, f"Error leyendo el Excel: {e}")
+        return render(request, "proyectos/importar.html", {"form": ExcelUploadForm()})
 
-    if df.empty:
-        messages.error(request, "El Excel está vacío.")
-        return render(request, "proyectos/importar.html", {"form": form})
+    if df is None or df.empty:
+        messages.warning(request, "El Excel no tiene filas.")
+        return render(request, "proyectos/importar.html", {"form": ExcelUploadForm()})
 
-    # Normaliza encabezados
-    df.columns = [_normaliza_nombre(c) for c in df.columns]
-    df = df.rename(columns={c: MAPEO_COLUMNAS[c] for c in df.columns if c in MAPEO_COLUMNAS})
+    # 2) Normalizar/renombrar encabezados
+    norm_cols = [_norm(c) for c in df.columns]
+    df.columns = norm_cols
+    rename_map = {}
+    for c in norm_cols:
+        destino = MAPEO_COLUMNAS.get(c)
+        if destino:
+            rename_map[c] = destino
+    df = df.rename(columns=rename_map)
 
+    # 3) Chequeos mínimos
     if "codigo" not in df.columns:
-        messages.error(request, "No se encontró columna clave 'codigo'.")
-        return render(request, "proyectos/importar.html", {"form": form})
+        messages.error(
+            request,
+            "No se encontró la columna de código. Usa 'Código' o 'Codigo'."
+        )
+        return render(request, "proyectos/importar.html", {"form": ExcelUploadForm()})
 
-    # Filtra solo campos actualizables
-    df = df[[c for c in df.columns if c in CAMPOS_ACTUALIZABLES]].copy()
+    # 4) Crear columnas vacías si faltan
+    for col in (TEXT_FIELDS | NUMERIC_FIELDS | {"numero"}):
+        if col not in df.columns:
+            df[col] = None
 
-    # Conversión numérica
-    for col in ("ppto_total","ppto_gaf_2025","identificado_2025","ejecutado"):
-        if col in df.columns:
-            df[col] = df[col].apply(_to_decimal)
+    # 5) Conversiones
+    for col in NUMERIC_FIELDS:
+        df[col] = df[col].apply(_to_decimal)
+    if "numero" in df.columns:
+        df["numero"] = df["numero"].apply(_to_int)
 
-    # Normaliza código
-    df = df[df["codigo"].notna()]
+    # 6) Limpiar códigos
     df["codigo"] = df["codigo"].astype(str).str.strip()
-    df = df[df["codigo"]!=""]
+    df = df[df["codigo"] != ""]
+    if df.empty:
+        messages.warning(request, "No se encontraron filas con `Código` válido.")
+        return render(request, "proyectos/importar.html", {"form": ExcelUploadForm()})
 
-    creados, actualizados = 0,0
-    with transaction.atomic():
-        for _, row in df.iterrows():
-            data = {c: row[c] for c in CAMPOS_ACTUALIZABLES if c in row and c!="codigo" and pd.notna(row[c])}
-            obj, created = Proyecto.objects.update_or_create(
-                codigo=row["codigo"], defaults=data
-            )
-            if created: creados+=1
-            else: actualizados+=1
+    # 7) Guardar
+    creados = 0
+    actualizados = 0
+    try:
+        with transaction.atomic():
+            for _, row in df.iterrows():
+                codigo = row["codigo"]
+                defaults = {}
 
-    messages.success(request, f"Importación: {creados} creados, {actualizados} actualizados.")
-    return redirect(reverse("lista_proyectos"))
+                for t in TEXT_FIELDS:
+                    val = row.get(t)
+                    if val is not None and str(val).strip() != "":
+                        defaults[t] = str(val).strip()
 
-# ===== Vista: editar código manual =====
+                for n in NUMERIC_FIELDS:
+                    defaults[n] = row.get(n)
 
-@require_http_methods(["GET", "POST"])
-def editar_proyecto_codigo(request, proyecto_id):
-    proyecto = get_object_or_404(Proyecto, pk=proyecto_id)
+                if row.get("numero") is not None:
+                    defaults["numero"] = row["numero"]
 
-    if request.method == "POST":
-        form = EditarCodigoForm(request.POST)
-        # Mostrar siempre el código actual en el campo deshabilitado
-        form.fields["codigo_actual"].initial = proyecto.codigo
+                obj, created = Proyecto.objects.update_or_create(
+                    codigo=codigo,
+                    defaults=defaults
+                )
+                if created:
+                    creados += 1
+                else:
+                    actualizados += 1
 
-        if form.is_valid():
-            nuevo = form.cleaned_data["nuevo_codigo"].strip()
-            if not nuevo:
-                form.add_error("nuevo_codigo", "Ingresa un código válido.")
-            elif Proyecto.objects.exclude(pk=proyecto.pk).filter(codigo__iexact=nuevo).exists():
-                form.add_error("nuevo_codigo", "Este código ya existe en otro proyecto.")
-            else:
-                Proyecto.objects.filter(pk=proyecto.pk).update(codigo=nuevo)
-                messages.success(request, f"Código actualizado a {nuevo}.")
-                return redirect("lista_proyectos")
-    else:
-        form = EditarCodigoForm(initial={"codigo_actual": proyecto.codigo})
+    except IntegrityError as e:
+        messages.error(request, f"Error de integridad al guardar: {e}")
+        return render(request, "proyectos/importar.html", {"form": ExcelUploadForm()})
+    except Exception as e:
+        messages.error(request, f"Ocurrió un error al guardar: {e}")
+        return render(request, "proyectos/importar.html", {"form": ExcelUploadForm()})
 
-    return render(request, "proyectos/editar_codigo.html", {"form": form, "proyecto": proyecto})
+    messages.success(request, f"Importación OK: {creados} creados, {actualizados} actualizados.")
+    return redirect("proyectos_lista")
+
 
 
