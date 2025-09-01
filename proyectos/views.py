@@ -169,105 +169,194 @@ def _to_int(val):
 # ===== Vista: importar Excel =====
 @require_http_methods(["GET", "POST"])
 def importar_proyectos(request):
+    """
+    Importa un Excel y ACTUALIZA proyectos existentes por 'codigo'.
+    NO crea nuevos. Ignora filas sin código y columnas que no existan.
+    """
     if request.method == "GET":
-        return render(request, "proyectos/importar.html", {"form": ExcelUploadForm()})
+        return render(request, "proyectos/importar.html", {"form": ImportarExcelForm()})
 
-    form = ExcelUploadForm(request.POST, request.FILES)
+    form = ImportarExcelForm(request.POST, request.FILES)
     if not form.is_valid():
-        messages.error(request, f"Formulario inválido: {form.errors}")
+        messages.error(request, "Formulario inválido. Revisa los campos.")
         return render(request, "proyectos/importar.html", {"form": form})
 
     archivo = form.cleaned_data["archivo"]
-    hoja = form.cleaned_data.get("hoja") or 0
+    hoja = form.cleaned_data.get("hoja") or 0  # primera hoja si no dan nombre
 
-    # 1) Leer Excel
-    import io, traceback
     try:
-        buffer = archivo.read()
-        df = pd.read_excel(io.BytesIO(buffer), sheet_name=hoja, engine="openpyxl")
+        # pandas soporta file-like directamente
+        df = pd.read_excel(archivo, sheet_name=hoja)
     except Exception as e:
-        traceback.print_exc()
-        messages.error(request, f"Error leyendo el Excel: {e}")
-        return render(request, "proyectos/importar.html", {"form": ExcelUploadForm()})
+        messages.error(request, f"No se pudo leer el Excel: {e}")
+        return render(request, "proyectos/importar.html", {"form": form})
 
-    if df is None or df.empty:
-        messages.warning(request, "El Excel no tiene filas.")
-        return render(request, "proyectos/importar.html", {"form": ExcelUploadForm()})
-
-    # 2) Normalizar/renombrar encabezados
-    norm_cols = [_norm(c) for c in df.columns]
-    df.columns = norm_cols
-    rename_map = {}
-    for c in norm_cols:
-        destino = MAPEO_COLUMNAS.get(c)
-        if destino:
-            rename_map[c] = destino
-    df = df.rename(columns=rename_map)
-
-    # 3) Chequeos mínimos
-    if "codigo" not in df.columns:
-        messages.error(
-            request,
-            "No se encontró la columna de código. Usa 'Código' o 'Codigo'."
-        )
-        return render(request, "proyectos/importar.html", {"form": ExcelUploadForm()})
-
-    # 4) Crear columnas vacías si faltan
-    for col in (TEXT_FIELDS | NUMERIC_FIELDS | {"numero"}):
-        if col not in df.columns:
-            df[col] = None
-
-    # 5) Conversiones
-    for col in NUMERIC_FIELDS:
-        df[col] = df[col].apply(_to_decimal)
-    if "numero" in df.columns:
-        df["numero"] = df["numero"].apply(_to_int)
-
-    # 6) Limpiar códigos
-    df["codigo"] = df["codigo"].astype(str).str.strip()
-    df = df[df["codigo"] != ""]
     if df.empty:
-        messages.warning(request, "No se encontraron filas con `Código` válido.")
-        return render(request, "proyectos/importar.html", {"form": ExcelUploadForm()})
+        messages.warning(request, "El Excel no tiene filas para procesar.")
+        return render(request, "proyectos/importar.html", {"form": form})
 
-    # 7) Guardar
-    creados = 0
+    # Mapeo flexible de encabezados Excel -> campos del modelo
+    # Acepta variantes comunes de tus encabezados:
+    # "Ficha, Código, Nombre Proyecto, Gerencia, Unidad Operativa, Tipo, Estado,
+    #  Presupuesto Total, Ejecutado Total, Comprometido Total, Presupuesto Año,
+    #  Identificado Año, Ejecutado Año, Fisico Total, Financiero Total,
+    #  Fisico Año, Financiero Año, Avance Fisico"
+    col_norm = { _norm(c): c for c in df.columns }
+
+    def find_col(*candidatos):
+        for c in candidatos:
+            if c in col_norm:
+                return col_norm[c]
+        return None
+
+    col_codigo   = find_col("codigo", "codigo proyecto", "cod")
+    col_nombre   = find_col("nombre proyecto", "nombre")
+    col_estado   = find_col("estado")
+    col_ppto_tot = find_col("presupuesto total", "ppto total", "presupuesto_total", "ppto_total")
+    col_ppto_ano = find_col("presupuesto ano", "presupuesto año", "ppto gaf 2025", "gaf 2025")
+    col_ident_25 = find_col("identificado ano", "identificado año", "identificado 2025")
+    col_ejec_ano = find_col("ejecutado ano", "ejecutado año", "ejecutado 2025")
+
+    if not col_codigo:
+        messages.error(request, "No se encontró la columna de CÓDIGO en el Excel.")
+        return render(request, "proyectos/importar.html", {"form": form})
+
+    # Contadores
+    total_rows = len(df)
+    sin_codigo = 0
+    no_encontrado = 0
     actualizados = 0
-    try:
-        with transaction.atomic():
-            for _, row in df.iterrows():
-                codigo = row["codigo"]
-                defaults = {}
+    sin_cambios  = 0
+    errores      = 0
 
-                for t in TEXT_FIELDS:
-                    val = row.get(t)
-                    if val is not None and str(val).strip() != "":
-                        defaults[t] = str(val).strip()
+    # Utilidad para convertir a Decimal seguro
+    def to_decimal(val):
+        if pd.isna(val):
+            return None
+        try:
+            # Maneja valores con coma o punto
+            s = str(val).replace(".", "").replace(",", ".")
+            # si quedó solo punto, limpia:
+            if s == ".":
+                return None
+            return Decimal(s)
+        except Exception:
+            return None
 
-                for n in NUMERIC_FIELDS:
-                    defaults[n] = row.get(n)
+    @transaction.atomic
+    def _procesar():
+        nonlocal sin_codigo, no_encontrado, actualizados, sin_cambios, errores
 
-                if row.get("numero") is not None:
-                    defaults["numero"] = row["numero"]
+        for idx, row in df.iterrows():
+            # 1) Código (clave)
+            raw_code = row.get(col_codigo)
+            code = ("" if pd.isna(raw_code) else str(raw_code)).strip()
+            if not code:
+                sin_codigo += 1
+                continue
 
-                obj, created = Proyecto.objects.update_or_create(
-                    codigo=codigo,
-                    defaults=defaults
-                )
-                if created:
-                    creados += 1
-                else:
+            try:
+                proyecto = Proyecto.objects.get(codigo=code)
+            except Proyecto.DoesNotExist:
+                no_encontrado += 1
+                continue
+            except Exception:
+                errores += 1
+                continue
+
+            cambios = 0
+
+            # 2) nombre (texto)
+            if col_nombre:
+                raw = row.get(col_nombre)
+                if not pd.isna(raw):
+                    nuevo = str(raw).strip()
+                    if nuevo and nuevo != proyecto.nombre:
+                        proyecto.nombre = nuevo
+                        cambios += 1
+
+            # 3) estado (texto)
+            if col_estado:
+                raw = row.get(col_estado)
+                if not pd.isna(raw):
+                    nuevo = str(raw).strip()
+                    if nuevo and nuevo != proyecto.estado:
+                        proyecto.estado = nuevo
+                        cambios += 1
+
+            # 4) ppto_total (decimal)
+            if col_ppto_tot:
+                nuevo = to_decimal(row.get(col_ppto_tot))
+                if nuevo is not None and nuevo != proyecto.ppto_total:
+                    proyecto.ppto_total = nuevo
+                    cambios += 1
+
+            # 5) ppto_gaf_2025 (desde "Presupuesto Año")
+            if col_ppto_ano:
+                nuevo = to_decimal(row.get(col_ppto_ano))
+                if nuevo is not None and nuevo != proyecto.ppto_gaf_2025:
+                    proyecto.ppto_gaf_2025 = nuevo
+                    cambios += 1
+
+            # 6) identificado_2025 (decimal)
+            if col_ident_25:
+                nuevo = to_decimal(row.get(col_ident_25))
+                if nuevo is not None and nuevo != proyecto.identificado_2025:
+                    proyecto.identificado_2025 = nuevo
+                    cambios += 1
+
+            # 7) ejecutado (usamos "Ejecutado Año")
+            if col_ejec_ano:
+                nuevo = to_decimal(row.get(col_ejec_ano))
+                if nuevo is not None and nuevo != proyecto.ejecutado:
+                    proyecto.ejecutado = nuevo
+                    cambios += 1
+
+            if cambios:
+                try:
+                    proyecto.save()
                     actualizados += 1
+                except Exception:
+                    errores += 1
+            else:
+                sin_cambios += 1
 
-    except IntegrityError as e:
-        messages.error(request, f"Error de integridad al guardar: {e}")
-        return render(request, "proyectos/importar.html", {"form": ExcelUploadForm()})
+    # Ejecuta el procesamiento dentro de una transacción
+    try:
+        _procesar()
     except Exception as e:
-        messages.error(request, f"Ocurrió un error al guardar: {e}")
-        return render(request, "proyectos/importar.html", {"form": ExcelUploadForm()})
+        messages.error(request, f"Ocurrió un error al procesar: {e}")
+        return render(request, "proyectos/importar.html", {"form": form})
 
-    messages.success(request, f"Importación OK: {creados} creados, {actualizados} actualizados.")
-    return redirect("proyectos_lista")
+    # Resumen para el usuario
+    messages.success(
+        request,
+        (
+            f"Procesadas {total_rows} filas. "
+            f"Actualizados: {actualizados}. "
+            f"Sin cambios: {sin_cambios}. "
+            f"Sin código: {sin_codigo}. "
+            f"No encontrados: {no_encontrado}. "
+            f"Errores: {errores}."
+        )
+    )
+
+    # Nota de columnas detectadas (informativa)
+    cols_info = []
+    for label, col in [
+        ("Código", col_codigo),
+        ("Nombre", col_nombre),
+        ("Estado", col_estado),
+        ("Ppto Total", col_ppto_tot),
+        ("Presupuesto Año → GAF 2025", col_ppto_ano),
+        ("Identificado Año → Identificado_2025", col_ident_25),
+        ("Ejecutado Año → Ejecutado", col_ejec_ano),
+    ]:
+        cols_info.append(f"{label}: {'OK' if col else '—'}")
+
+    messages.info(request, "Columnas reconocidas → " + " | ".join(cols_info))
+
+    return render(request, "proyectos/importar.html", {"form": ImportarExcelForm()})
 
 @require_http_methods(["GET", "POST"])
 def editar_proyecto_codigo(request, pk):

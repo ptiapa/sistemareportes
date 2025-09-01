@@ -51,5 +51,13 @@ def clean_nuevo_codigo(self):
 
 
 # Alias para mantener compatibilidad con la vista que importa ImportarExcelForm
-class ImportarExcelForm(ExcelUploadForm):
-    pass
+class ImportarExcelForm(forms.Form):
+    archivo = forms.FileField(
+        label="Archivo Excel (.xlsx)",
+        help_text="Sube un archivo .xlsx con los proyectos"
+    )
+    hoja = forms.CharField(
+        label="Nombre de hoja (opcional)",
+        required=False,
+        help_text="Si la dejas vacía, se usará la primera hoja"
+    )

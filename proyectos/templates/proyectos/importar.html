@@ -11,7 +11,6 @@
     .messages .success { color: #0a7a0a; }
     .messages .error, .messages .warning { color: #a00; }
     label { display:block; margin: 8px 0 4px; }
-    input[type=file], input[type=text] { width:100%; }
     button, a.btn { padding:8px 12px; display:inline-block; margin-top: 8px; text-decoration: none; border: 1px solid #888; border-radius: 6px; }
   </style>
 </head>
@@ -39,10 +38,12 @@
           <a class="btn" href="{% url 'lista_proyectos' %}">Volver</a>
         </div>
       </form>
+
       <p style="margin-top:12px; font-size:13px;">
-        Encabezados válidos (ejemplos): <code>codigo</code>, <code>nombre</code>, <code>estado</code>,
-        <code>ppto total</code>, <code>ppto gaf 2025</code>, <code>identificado 2025</code>, <code>ejecutado</code>.<br>
-        Se aceptan variantes comunes (mayúsculas, tildes).
+        Encabezados reconocidos (cualquiera de sus variantes):<br>
+        <code>Código</code>, <code>Nombre Proyecto</code>, <code>Estado</code>,
+        <code>Presupuesto Total</code>, <code>Presupuesto Año</code>,
+        <code>Identificado Año</code>, <code>Ejecutado Año</code>.
       </p>
     </div>
   </div>
