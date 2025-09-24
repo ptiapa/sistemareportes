@@ -143,19 +143,37 @@ def _norm(s: str) -> str:
     return (col or "").strip().lower()
 
 def _to_decimal(val):
-    """Convierte '1.234.567,89' o '1,234,567.89' a Decimal; None si vacío."""
-    if val is None or (isinstance(val, float) and pd.isna(val)) or (isinstance(val, str) and val.strip() == ""):
+    """
+    Normaliza números con miles (.) y decimales (,) a Decimal.
+    Acepta int/float/Decimal y strings con distintos formatos.
+    Devuelve None si está vacío o no se puede parsear.
+    """
+    if val is None:
         return None
-    s = str(val).strip().replace(" ", "")
-    if s.count(",") == 1 and s.count(".") > 1:
-        s = s.replace(".", "").replace(",", ".")
-    elif s.count(",") > 1 and s.count(".") == 1:
-        s = s.replace(",", "")
-    elif s.count(",") == 1 and s.count(".") == 0:
-        s = s.replace(",", ".")
+    if isinstance(val, Decimal):
+        return val
+    if isinstance(val, (int, float)):
+        # Evita binarios raros de float
+        return Decimal(str(val))
+
+    s = str(val).strip()
+    if not s:
+        return None
+
+    # Saca espacios y no-break spaces
+    s = s.replace('\xa0', '').replace(' ', '')
+
+    # Caso típico es-CL: tiene '.' y ',' y la coma va al final -> decimales con ','
+    if ',' in s:
+        # quita puntos de miles y cambia coma decimal a punto
+        s = s.replace('.', '').replace(',', '.')
+    else:
+        # si no hay coma, puede venir con comas de miles (US) -> quítalas
+        s = s.replace(',', '')
+
     try:
         return Decimal(s)
-    except (InvalidOperation, ValueError):
+    except InvalidOperation:
         return None
 
 def _to_int(val):
