@@ -8,7 +8,7 @@ from .forms import FlujoCajaForm, ExcelUploadForm, EditarCodigoForm, ImportarExc
 
 import pandas as pd
 import io
-from decimal import Decimal, InvalidOperation
+from decimal import Decimal, InvalidOperation, ROUND_HALF_UP
 
 from django.views.decorators.http import require_http_methods
 from django.contrib import messages
@@ -17,6 +17,13 @@ from django.urls import reverse
 
 import traceback
 from unicodedata import normalize
+
+import numbers
+
+
+TWOCENTS = Decimal("0.01")
+BILLION = Decimal("1000000000")
+
 
 def lista_proyectos(request):
     proyectos = Proyecto.objects.all()
@@ -142,39 +149,40 @@ def _norm(s: str) -> str:
     return " ".join(s.split())
     return (col or "").strip().lower()
 
-def _to_decimal(val):
-    """
-    Normaliza números con miles (.) y decimales (,) a Decimal.
-    Acepta int/float/Decimal y strings con distintos formatos.
-    Devuelve None si está vacío o no se puede parsear.
-    """
+def parse_money(val):
+    """Convierte valores de Excel (float, int, str) a Decimal(2) soportando
+    formatos es-CL (1.234,56), en-US (1,234.56), con/sin separadores."""
     if val is None:
-        return None
-    if isinstance(val, Decimal):
-        return val
-    if isinstance(val, (int, float)):
-        # Evita binarios raros de float
-        return Decimal(str(val))
+        return Decimal("0.00")
 
-    s = str(val).strip()
-    if not s:
-        return None
-
-    # Saca espacios y no-break spaces
-    s = s.replace('\xa0', '').replace(' ', '')
-
-    # Caso típico es-CL: tiene '.' y ',' y la coma va al final -> decimales con ','
-    if ',' in s:
-        # quita puntos de miles y cambia coma decimal a punto
-        s = s.replace('.', '').replace(',', '.')
+    # Si viene como número (openpyxl suele dar float)
+    if isinstance(val, numbers.Number):
+        d = Decimal(str(val)).quantize(TWOCENTS, rounding=ROUND_HALF_UP)
     else:
-        # si no hay coma, puede venir con comas de miles (US) -> quítalas
-        s = s.replace(',', '')
+        s = str(val).strip().replace("\xa0", "").replace(" ", "")
+        # Detectar patrón es-CL vs en-US cuando hay ambos separadores
+        if "." in s and "," in s:
+            if s.rfind(".") > s.rfind(","):  # en-US: 1,234.56
+                s = s.replace(",", "")
+            else:                            # es-CL: 1.234,56
+                s = s.replace(".", "").replace(",", ".")
+        else:
+            # Si solo hay coma, asumir decimal con coma
+            if "," in s and "." not in s:
+                s = s.replace(".", "").replace(",", ".")
+            else:
+                s = s.replace(",", "")  # solo puntos -> quitar miles
 
-    try:
-        return Decimal(s)
-    except InvalidOperation:
-        return None
+        try:
+            d = Decimal(s).quantize(TWOCENTS, rounding=ROUND_HALF_UP)
+        except InvalidOperation:
+            d = Decimal("0.00")
+
+    # Cortafuego: si llegó con 1e9 de más, normaliza
+    if d >= Decimal("1e12"):         # umbral razonable para detectar el error
+        d = (d / BILLION).quantize(TWOCENTS, rounding=ROUND_HALF_UP)
+
+    return d
 
 def _to_int(val):
     try:
