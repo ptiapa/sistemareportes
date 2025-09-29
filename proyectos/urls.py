@@ -8,6 +8,7 @@ urlpatterns = [
     path("flujo/<int:pk>/", editar_flujo, name="editar_flujo"),  
     path("importar/", importar_proyectos, name="proyectos_importar"),
     path("<int:pk>/editar-codigo/", editar_proyecto_codigo, name="editar_proyecto_codigo"),
+    #path('admin/', admin.site.urls),
     
 ]
 
