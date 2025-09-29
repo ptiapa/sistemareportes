@@ -156,60 +156,40 @@ def _norm(s: str) -> str:
 
 def parse_money(val):
     """
-    Convierte valores monetarios desde Excel a Decimal(2):
-    - Acepta números (int/float), strings con . y , en distintos formatos,
-      y limpia espacios/moneda.
-    - NO pasa por float -> str cuando viene texto con separadores.
+    Convierte strings/float/int a Decimal sin perder el punto decimal.
+    - Acepta formatos ES ('.' miles, ',' decimal) y EN ('.' decimal).
+    - NO elimina el punto si es el separador decimal real.
     """
     if val is None:
-        return Decimal("0.00")
+        return None
 
-    # NaN de pandas
-    try:
-        import math
-        if isinstance(val, float) and math.isnan(val):
-            return Decimal("0.00")
-    except Exception:
-        pass
-
-    # Si ya es número "puro"
-    if isinstance(val, (int, Decimal)):
-        return Decimal(val).quantize(Decimal("0.01"))
+    # Tipos numéricos nativos
+    if isinstance(val, Decimal):
+        return val
+    if isinstance(val, int):
+        return Decimal(val)
     if isinstance(val, float):
-        # Evita errores binarios: usa str(val)
-        return Decimal(str(val)).quantize(Decimal("0.01"))
+        # Nunca Decimal(val) directo por el binario -> usa str()
+        return Decimal(str(val))
 
-    s = str(val).strip()
-    if not s:
-        return Decimal("0.00")
+    # Strings
+    s = str(val).strip().replace('\u00A0', '').replace(' ', '')  # limpia espacios/nbsp
+    # Si hay punto y coma, asumimos ES -> '.' miles y ',' decimal
+    if '.' in s and ',' in s:
+        s = s.replace('.', '').replace(',', '.')
+    else:
+        # Si solo hay coma, trátala como decimal
+        if ',' in s and '.' not in s:
+            s = s.replace(',', '.')
 
-    # Limpia espacios normales y no separables
-    s = s.replace("\u00A0", " ").replace(" ", "")
-
-    # Detecta cuál es el separador decimal
-    if "," in s and "." in s:
-        # Si la última coma está después del último punto, asumimos decimal = coma (formato es-CL)
-        if s.rfind(",") > s.rfind("."):
-            s = s.replace(".", "").replace(",", ".")
-        else:
-            # decimal = punto, las comas son miles
-            s = s.replace(",", "")
-    elif "," in s:
-        # Solo comas: si hay una sola y está a dos decimales del final, trátala como decimal
-        if s.count(",") == 1 and len(s) >= 3 and s[-3] == ",":
-            s = s.replace(",", ".")
-        else:
-            # Probablemente comas de miles
-            s = s.replace(",", "")
-    # si solo hay puntos, ya está OK como decimal
-
-    # Deja solo dígitos, punto y signo
-    s = re.sub(r"[^0-9\.\-]", "", s)
+    # Deja solo dígitos, un signo inicial opcional y el punto decimal
+    s = re.sub(r'(?<!^)-|[^0-9\.-]', '', s)
 
     try:
-        return Decimal(s).quantize(Decimal("0.01"))
+        return Decimal(s)
     except InvalidOperation:
-        return Decimal("0.00")
+        return None
+
 
 def _to_int(val):
     try:
